@@ -1,0 +1,25 @@
+
+.maincontainer{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.maincontainer video{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.secondarycontainer{
+  display: grid;
+  grid-template-columns: 80px 360px auto;
+  gap: 10px;
+}
+

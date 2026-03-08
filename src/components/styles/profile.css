@@ -1,0 +1,69 @@
+.profilecontainer {
+    border-radius: 40px 0 40px 40px;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-color);
+}
+
+.profilecontainer .two .image {
+    border-radius: 40px 0 40px 40px;
+    background-color: #cfced3;
+    height: 40vh;
+}
+
+.profilecontainer  .wh{
+    padding: 40px;
+}
+
+.profilecontainer .two .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.profilecontainer .two2 {
+    border-top: gray solid 2px;
+    display: flex;
+
+}
+
+.profilecontainer .two .c-2 {
+    width: 50%;
+}
+
+.profilecontainer .two .c-2 h6 {
+    color: white;
+}
+
+.profilecontainer .two .fi {
+    border-right: 2px solid gray;
+}
+
+.profilecontainer .informations .apps {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profilecontainer .informations .apps .app {
+    border: white solid 1px;
+    border-radius: 40%;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+.profilecontainer .informations .name{
+    font-weight: 700;
+    line-height: 80px;
+}
+
+.profilecontainer .informations .apps .app:hover i {
+    color: var(--green-color);
+    
+}
+
+.profilecontainer .informations .apps .app i {
+    color: white;
+    font-size: 1rem;
+}

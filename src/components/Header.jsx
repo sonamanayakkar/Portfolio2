@@ -1,0 +1,73 @@
+import React from 'react'
+import './styles/header.css'
+import { Link } from 'react-router-dom'
+
+const Header = () => {
+  return (
+    <header className='d-flex flex-column gap-3 p-0'>
+      <div className="customizations">
+        <div className="two mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          fill="currentColor" viewBox="0 0 24 24" > <path d="M8.5 1.5C6.92 1.5 5.6 2.56 5.16 4H2v2h3.16c.43 1.44 1.76 2.5 3.34 2.5s2.9-1.06 3.34-2.5H22V4H11.84A3.495 3.495 0 0 0 8.5 1.5m0 5C7.67 6.5 7 5.83 7 5s.67-1.5 1.5-1.5S10 4.17 10 5s-.67 1.5-1.5 1.5m0 9c-1.58 0-2.9 1.06-3.34 2.5H2v2h3.16c.43 1.44 1.76 2.5 3.34 2.5s2.9-1.06 3.34-2.5H22v-2H11.84a3.495 3.495 0 0 0-3.34-2.5m0 5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5m8-12c-1.58 0-2.9 1.06-3.34 2.5H2v2h11.16c.43 1.44 1.76 2.5 3.34 2.5s2.9-1.06 3.34-2.5H22v-2h-2.16a3.495 3.495 0 0 0-3.34-2.5m0 5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5"></path>
+        </svg></div>
+        <div className="two"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          fill="currentColor" viewBox="0 0 24 24" >
+          <path d="M12 17.01c2.76 0 5.01-2.25 5.01-5.01S14.76 6.99 12 6.99 6.99 9.24 6.99 12s2.25 5.01 5.01 5.01M12 9c1.66 0 3.01 1.35 3.01 3.01s-1.35 3.01-3.01 3.01-3.01-1.35-3.01-3.01S10.34 9 12 9m1 10h-2v3h2zm0-17h-2v3h2zM2 11h3v2H2zm17 0h3v2h-3zM4.22 18.36l.71.71.71.71 1.06-1.06 1.06-1.06-.71-.71-.71-.71-1.06 1.06zM19.78 5.64l-.71-.71-.71-.71-1.06 1.06-1.06 1.06.71.71.71.71 1.06-1.06zm-12.02.7L6.7 5.28 5.64 4.22l-.71.71-.71.71L5.28 6.7l1.06 1.06.71-.71zm8.48 11.32 1.06 1.06 1.06 1.06.71-.71.71-.71-1.06-1.06-1.06-1.06-.71.71z"></path>
+        </svg></div>
+      </div>
+      <div className="navs d-flex flex-column gap-2 ">
+        <div className="box">
+          <Link to='/'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="currentColor" viewBox="0 0 24 24" >
+
+              <path d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5m0-8c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3M4 22h16c.55 0 1-.45 1-1v-1c0-3.86-3.14-7-7-7h-4c-3.86 0-7 3.14-7 7v1c0 .55.45 1 1 1m6-7h4c2.76 0 5 2.24 5 5H5c0-2.76 2.24-5 5-5"></path>
+            </svg>
+          </Link>
+          <div className="notify">
+
+            <span>About</span>
+          </div>
+        </div>
+        <div className="box">
+          <Link to='/skills'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="currentColor" viewBox="0 0 24 24" >
+              <path d="M20 9.8C19.9 5.27 16.36 2 11.5 2s-9.49 3.24-9.49 8.67c0 2.71 1.03 5.05 2.99 6.79V22h2v-5.48l-.37-.3c-1.74-1.4-2.62-3.26-2.62-5.55C4.01 6.34 7.87 4 11.5 4c3.83 0 6.5 2.47 6.5 6v.19L19.52 14H17v4h-4v4h2v-2h2c1.1 0 2-.9 2-2v-2h1.26a1.5 1.5 0 0 0 1.39-2.06L19.99 9.8Z"></path><path d="M8 13c.16 0 .31-.02.46-.06a2.496 2.496 0 0 0 4.08 0c.15.04.3.06.46.06.81 0 1.51-.49 1.82-1.18.69-.31 1.18-1.01 1.18-1.82 0-.75-.42-1.39-1.02-1.74A2.49 2.49 0 0 0 12.5 6c-.49 0-.94.15-1.33.39A1.98 1.98 0 0 0 10 6c-.75 0-1.39.42-1.74 1.03C8.17 7.02 8.09 7 8 7c-1.1 0-2 .9-2 2 0 .37.11.7.28 1-.17.3-.28.63-.28 1 0 1.1.9 2 2 2"></path>
+            </svg>
+          </Link>
+          <div className="notify">
+            <span>Skills</span>
+          </div>
+        </div>
+        <div className="box">
+          <Link to='/projects'><i className="fa-solid fa-toolbox"></i></Link>
+
+          <div className="notify">
+            <span>Projects</span>
+          </div>
+        </div>
+        <div className="box">
+          <Link to='/resume'> <i className="fa-regular fa-file-lines"></i></Link>
+
+          <div className="notify">
+            <span>Resume</span>
+          </div>
+        </div>
+        <div className="box">
+          <Link to='/contact'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              fill="currentColor" viewBox="0 0 24 24" >
+              <path d="M19 2H5c-.55 0-1 .45-1 1v4H2v2h2v2H2v2h2v2H2v2h2v4c0 .55.45 1 1 1h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M6 4h8v16H6zm13 16h-3v-2.5h3zm0-4.5h-3V13h3zm0-4.5h-3V8.5h3zm0-4.5h-3V4h3z"></path>
+            </svg>
+          </Link>
+          <div className="notify">
+            <span>Contact</span>
+          </div>
+
+        </div>
+      </div>
+    </header>
+  )
+}
+
+export default Header

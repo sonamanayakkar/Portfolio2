@@ -1,0 +1,58 @@
+
+header{
+    width: fit-content;
+    padding: 20px;
+}
+
+header .two {
+    background: var(--bg-color);
+    padding: 25px;
+    border-radius: 50%;
+}
+header .navs{
+    border-radius: 40px;
+    background: var(--bg-color);
+    padding: 10px;
+}
+header .navs .box{
+    position: relative;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #272727;
+    cursor: pointer;
+}
+
+header .navs i,path{
+    color: white;
+}
+
+header .navs .box .notify{
+    position: absolute;
+    left: 90%;
+    top: 30%;
+    opacity: 0;
+    background-color: var(  --green-color);
+    padding: 2px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s ease;
+}
+header .navs .box:hover i{
+    color: var(--green-color);
+}
+header .navs .box:hover path{
+    color: var(--green-color);
+}
+
+header .navs .box:hover .notify{
+    opacity: 1;
+    transform: translateX(10px);
+}
+
+header .navs .box .notify span{
+    font-size: .8rem;
+    font-weight: 700;
+    
+}
