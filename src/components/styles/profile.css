@@ -3,6 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background: var(--bg-color);
+    
 }
 
 .profilecontainer .two .image {
@@ -11,7 +12,7 @@
     height: 40vh;
 }
 
-.profilecontainer  .wh{
+.profilecontainer .wh {
     padding: 40px;
 }
 
@@ -53,14 +54,14 @@
 
 }
 
-.profilecontainer .informations .name{
+.profilecontainer .informations .name {
     font-weight: 700;
     line-height: 80px;
 }
 
 .profilecontainer .informations .apps .app:hover i {
     color: var(--green-color);
-    
+
 }
 
 .profilecontainer .informations .apps .app i {

@@ -1,5 +1,106 @@
+.pagecontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 
-.skillcontainer{
-    background: var(--bg-color);
+
+.pagecontainer .skillcontainer {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pagecontainer .header h2 {
+    color: var(--white-color);
+}
+
+.pagecontainer .header .first {
+    border: 1.5px solid var(--border-graycolor);
+    width: fit-content;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 25px;
+}
+
+.pagecontainer .header p {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.pagecontainer .skillcontainer .outsidedrop .slidecontent {
+     transition: .4s ease;
+  border: 1px rgba(255, 255, 255, 0.152) solid;
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    transform: translateY(-40px);
+    z-index: 1;
+}
+
+.pagecontainer .skillcontainer .outsidedrop:hover .slidecontent{
+      transform: translateY(-15px);
+}
+
+.pagecontainer .skillcontainer .outsidedrop h4 {
+    font-size: 1rem;
+    color: var(--white-color);
+}
+
+.pagecontainer .skillcontainer .outsidedrop {
+    position: relative;
+}
+
+.pagecontainer .skillcontainer .drop {
+
+
+    position: relative;
+    border: 1px rgba(255, 255, 255, 0.152) solid;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: var(--skil-bg);
+    z-index: 2;
+    overflow: hidden;
+    transition: .4s ease;
+}
+
+.pagecontainer .skillcontainer .drop::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    transform: scale(0);
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.292);
+    transition: .4s ease;
+}
+
+
+.pagecontainer .skillcontainer .drop:hover::before {
+    transform: scale(1);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.pagecontainer .skillcontainer .drop:hover {
+    transform: translateY(-20px);
+}
+
+.pagecontainer .skillcontainer .drop .skill {
+    /* border: white solid 1px; */
+    width: 100px;
+    height: 100px;
+    /* border-radius: 50%; */
+    overflow: hidden;
+}
+
+.pagecontainer .skillcontainer .drop .skill img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

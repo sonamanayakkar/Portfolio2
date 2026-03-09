@@ -7,9 +7,9 @@ const About = () => {
     <motion.div initial={{ x: -100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: -100, opacity: 0 }}
-      transition={{ duration: 0.5 }} style={{ position: "static",zIndex: -1}}>
+      transition={{ duration: 0.5 }} style={{ position: "static",zIndex: -1,height:"100%"}}>
 
-      <div className='pagecontainer container-fluid p-5'>
+      <div className='pagecontainer container-fluid p-5 m-0'>
         <div className="container scrollcontents ">
           <h3 className=''>Hello, I’m <span className='mainname'>SONAMANAYAKKAR</span></h3>
           <h1 className='role'><span className='course'>MERN Stack</span>  Developer | Electrical & Electronics Engineer</h1>
@@ -29,7 +29,7 @@ const About = () => {
                 <h1 className='text-white fw-normal'>3+</h1>
                 <p className=''> Technical Projects & Innovations</p>
               </div>
-
+    
             </div>
           </div>
         </div>

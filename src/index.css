@@ -6,8 +6,10 @@
 
 
 :root{
-  --bg-color:linear-gradient(to right ,#1B1B1B,rgb(20, 20, 20));
+  --bg-color:linear-gradient(to right ,#1B1B1B,rgb(14, 14, 14));
   --green-color:#6bc45f;
   --white-color:white;
+  --border-graycolor:#353535;
+  --skil-bg:#1E1E1E;
 }
 

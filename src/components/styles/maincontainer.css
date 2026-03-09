@@ -20,6 +20,12 @@
 .secondarycontainer{
   display: grid;
   grid-template-columns: 80px 360px auto;
+  align-items: center;
+  height: 90%;
   gap: 10px;
+}
+
+.holdcontainer{
+  height: 85vh;
 }
 
