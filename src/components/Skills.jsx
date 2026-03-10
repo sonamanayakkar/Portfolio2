@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import html from './images/skills/html2.png'
 import css from './images/skills/css2.png'
 import js from './images/skills/js.png'
-import bootstrap from './images/skills/bootstrap.png'
+import bootstrap from './images/skills/Bootstrap.png'
 import jquery from './images/skills/jquery.png'
 import mongodb from './images/skills/mongodb.png'
 import react from './images/skills/react2.png'
