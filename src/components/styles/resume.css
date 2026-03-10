@@ -1,0 +1,157 @@
+.pagecontainer .header h2 {
+    color: var(--green-color);
+}
+
+.pagecontainer .tree {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.pagecontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagecontainer .download {
+    margin-top: 20px;
+    align-self: center;
+    border: 1px solid gray;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: var(--green-color);
+    border-radius: 5px;
+    background: var(--black-color);
+}
+
+.pagecontainer .tree .left,
+.right {
+    height: fit-content;
+}
+
+.pagecontainer .tree .th {
+    margin-top: 40px;
+}
+
+.pagecontainer .tree .three {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pagecontainer .tree .three .first {
+    background: var(--skil-bg);
+    border: 1px rgba(255, 255, 255, 0.192) solid;
+    padding: 30px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pagecontainer .tree .three .first:hover::before {
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.363));
+
+    transform: scale(1);
+    opacity: 0;
+}
+
+/* .pagecontainer .tree .three .first::before {
+    transition: .3s ease;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    left: 0;
+    top: 0;
+    transform: scale(0);
+} */
+
+.pagecontainer .tree .line {
+    border: 1px solid rgba(128, 128, 128, 0.347);
+}
+
+.pagecontainer .tree .three .year {
+    border: 1px solid gray;
+    width: fit-content;
+    padding: 2px 20px;
+    border-radius: 5px;
+    color: var(--gray-color);
+}
+
+.pagecontainer .tree .three .edu {
+
+    border-radius: 10px;
+
+}
+
+.pagecontainer .tree .three .edu p {
+    color: var(--white-color);
+}
+
+.pagecontainer .tree .three .district {
+
+    color: var(--gray-color);
+}
+
+.pagecontainer .tree .three .name {
+
+    color: var(--white-color);
+}
+
+.pagecontainer .tree .three a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.pagecontainer .tree .line {
+    position: relative;
+}
+
+.pagecontainer .tree .line .dots {
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    animation: drop 1s ease infinite alternate-reverse;
+}
+
+@keyframes drop {
+    to {
+        box-shadow: 0px 0px 4px 5px rgb(45, 108, 60);
+    }
+}
+
+.pagecontainer .tree .line .dot1 {
+    left: -5px;
+    top: 0%;
+}
+
+.pagecontainer .tree .line .dot2 {
+    left: -5px;
+    top: 60%;
+}
+
+.pagecontainer .tree .line .dot3 {
+    left: -5px;
+    top: 0%;
+}
+
+.pagecontainer .tree .line .dot4 {
+    left: -5px;
+    top: 80%;
+}
+
+@media screen and (max-width:800px) {
+
+    .pagecontainer .tree {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+}

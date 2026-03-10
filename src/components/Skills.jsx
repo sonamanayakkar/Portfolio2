@@ -17,7 +17,7 @@ const Skills = () => {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -100, opacity: 0 }}
             transition={{ duration: 0.5 }} style={{ position: "static", zIndex: -1 }}>
-            <div className='pagecontainer container-fluid p-5'>
+            <div className='pagecontainer container-fluid p-lg-5 p-2 pb-5  m-lg-0 mt-3'>
                 <div className="header">
                     <div className="two first"><p className='m-0'>Technical skills</p></div>
                     <div className="two"><h2>Technologies</h2></div>

@@ -7,11 +7,11 @@ import guitar from './images/projects/guitar.jpg'
 
 const Projects = () => {
     return (
-        <motion.div initial={{ x: -100, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            exit={{ x: -100, opacity: 0 }}
-            transition={{ duration: 0.5 }} style={{ position: "static", zIndex: -1 }}>
-            <div className='pagecontainer container-fluid p-5'>
+        <motion.div initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -100, opacity: 0 }}
+            transition={{ duration: 0.5 }} style={{ position: "static", zIndex: -1 ,transformOrigin:"left"}}>
+            <div className='pagecontainer container-fluid p-lg-5 p-3 pb-5  m-lg-0 mt-3'>
 
                 <div className="header">
                     <div className="two first"><p className='m-0'>Projects </p></div>

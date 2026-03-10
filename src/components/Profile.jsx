@@ -11,8 +11,8 @@ const Profile = () => {
                 </div>
 
                 <div className="informations">
-                    <h5 className='text-center text-white-50'>Fullstack Developer</h5>
-                    <h3 className='text-center text-white name'>SONAMANAYAKKAR</h3>
+                    <h5 className='text-center rolee'>Fullstack Developer</h5>
+                    <h3 className='text-center  name'>SONAMANAYAKKAR</h3>
                     <div className="apps ">
                         <div className="app"><i className="fa-brands fa-linkedin-in"></i></div>
                         <div className="app"><i className="fa-brands fa-github"></i></div>
@@ -24,10 +24,10 @@ const Profile = () => {
             </div>
             <div className="container two two2 p-0">
                 <div className="c-2 fi text-center p-3" >
-                    <h6>Download CV</h6>
+                    <h6 className='cvdownload'>Download CV</h6>
                 </div>
                 <div className="c-2 text-center p-3">
-                    <h6>Contact Me</h6>
+                    <h6 className='cvdownload'>Contact Me</h6>
                 </div>
             </div>
         </div>

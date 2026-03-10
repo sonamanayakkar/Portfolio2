@@ -114,3 +114,11 @@
     gap: 10px;
     width: 240px;
 }
+
+@media screen and (max-width:800px) {
+    .pagecontainer .projects .pro {
+    position: static;
+    width: 100%;
+   margin-bottom: 20px;
+}
+}

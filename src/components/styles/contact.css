@@ -1,0 +1,93 @@
+.pagecontainer .contacts .up {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+
+}
+
+.pagecontainer .contacts .up .three {
+    flex: 1 0 40%;
+    border: 1px solid var( --border-graycolor);
+    background: var(--bg-color2);
+    border-radius: 20px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagecontainer .contacts .up .three .l {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.pagecontainer .contacts .up .three .l i {
+    color: var(--green-color);
+    font-size: 3rem;
+}
+
+.pagecontainer .contacts .up .three .l p {
+    color: rgb(161, 161, 161);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pagecontainer .contacts .up .three .r {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+.pagecontainer .contacts label {
+    color: rgb(149, 149, 149);
+    font-weight: 500;
+}
+
+.pagecontainer .contacts input,
+textarea {
+    background-color: transparent;
+    border: 1px solid var( --border-graycolor);
+    border-radius: 10px;
+    color: var(--white-color);
+    padding: 0 20px;
+
+}
+
+
+.pagecontainer .contacts input:focus {
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 10px 1px var(--green-color);
+}
+
+.pagecontainer .contacts textarea:focus {
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 10px 1px var(--green-color);
+}
+
+.pagecontainer .contacts button {
+    color: var(--white-color);
+    font-weight: 600;
+    background-color: var(--black-color);
+    border: 1px solid var(--green-color);
+}
+
+@media screen and (max-width:800px) {
+
+    .pagecontainer .contacts .up .three {
+        flex: 1 0 40%;
+        border: 1px gray solid;
+        background: var(--bg-color2);
+        border-radius: 20px;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

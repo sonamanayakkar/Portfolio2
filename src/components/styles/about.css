@@ -1,5 +1,5 @@
 .pagecontainer {
-    background: var(--bg-color);
+    background: var( --bg-color);
     border-radius: 0px 40px 40px 0;
     height: 85vh;
     overflow: auto;
@@ -26,9 +26,10 @@ p {
 
 }
 
+
 .pagecontainer .count p {
-    color: rgb(202, 202, 202);
-    font-weight: 500;
+  color: var(--gray-color);
+    font-weight: 700;
 }
 
 .pagecontainer .mainname {
@@ -41,4 +42,41 @@ p {
     padding: 0 20px;
     border-radius: 40px;
     color: black;
+}
+
+
+@media screen and (max-width:700px) {
+
+  .pagecontainer {
+    background: var( --bg-color);
+    border-radius:0;
+    height: 85vh;
+    overflow: auto;
+}
+
+.pagecontainer .course {
+    background-color: var(--green-color);
+    font-size: 2rem;
+    padding: 0 20px;
+    border-radius: 40px;
+    color: black;
+}
+
+.pagecontainer .role {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 37px;
+}
+
+.pagecontainer .count h1 {
+    font-size: 2.7rem;
+}
+.pagecontainer .count p {
+    color: rgb(202, 202, 202);
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+
+
 }

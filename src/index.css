@@ -5,11 +5,36 @@
 }
 
 
-:root{
-  --bg-color:linear-gradient(to right ,#1B1B1B,rgb(14, 14, 14));
-  --green-color:#6bc45f;
-  --white-color:white;
-  --border-graycolor:#353535;
-  --skil-bg:#1E1E1E;
+:root {
+  --bg-color2: linear-gradient(to right, #1B1B1B, rgb(14, 14, 14));
+  --bg-color: linear-gradient(to right, #1B1B1B, rgba(0, 0, 0, 0.39));
+  --green-color: #79cc6f;
+  --white-color: white;
+  --border-graycolor: rgba(255, 255, 255, .12);
+  --skil-bg: #1E1E1E;
+  --gray-color:#323232;
+  --black-color:rgb(23, 21, 21);
 }
 
+.lightmode {
+  --bg-color2: linear-gradient(to right, #ffffff, rgb(255, 255, 255));
+  --bg-color: linear-gradient(to right, #ffffff, rgb(255, 255, 255));
+  --green-color: #6bc45f;
+  --white-color: rgb(0, 0, 0);
+  --border-graycolor: rgba(190, 190, 190, 0.477);
+  --skil-bg: #ebebeb;
+  --gray-color:#323232;
+  --black-color:rgb(230, 230, 230);
+}
+.maincontainer{
+  position: relative;
+}
+.mousefollower{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(110, 214, 110, 0.564);
+  border-radius: 50%;
+  z-index: 10000;
+
+}
