@@ -4,7 +4,7 @@ import profile from './images/profile.png'
 
 const Profile = () => {
     return (
-        <div className='profilecontainer container-fluid d-flex flex-column p-0 ' >
+        <div className='profilecontainer container-fluid d-flex flex-column p-0 m-lg-0 mt-5' >
             <div className="container two wh">
                 <div className="image mb-4">
                     <img src={profile} className="img-fluid" alt="..."></img>

@@ -114,13 +114,13 @@ header .navs .box .notify span {
     header {
         width: 100%;
         background: var(--bg-color2);
-        position: sticky;
+        position: fixed;
         top: 0;
         z-index: 3000;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        padding: 2px 20px;
+        padding: 7px 20px;
     }
 
     header .fa-bars {
@@ -138,7 +138,7 @@ header .navs .box .notify span {
         position: absolute;
         width: 100%;
         left: -100%;
-        top: 60px;
+        top: 70px;
     }
 
     header .navscome {
@@ -146,7 +146,8 @@ header .navs .box .notify span {
         position: absolute;
         width: 100%;
         left: 0;
-        top: 60px;
+        top: 70px;
+        border-radius: 0;
     }
 
     header .two {
