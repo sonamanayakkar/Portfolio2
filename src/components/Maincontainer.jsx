@@ -33,8 +33,6 @@ const Maincontainer = () => {
         setTimeout(() => {
              setmouse({x:e.clientX,Y:e.clientY})
         }, 100);
-       
-        console.log(mouse);
     }
    
     return (
