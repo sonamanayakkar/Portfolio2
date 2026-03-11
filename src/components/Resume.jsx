@@ -8,7 +8,7 @@ const Resume = () => {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0, opacity: 0 }}
             transition={{ duration: 0.5 }} style={{ position: "static", zIndex: -1 }}>
-            <div className='pagecontainer container-fluid p-lg-5 p-2 pb-5 m-lg-0 mt-3'>
+            <div className='pagecontainer container-fluid p-lg-5 p-4 pb-5 m-lg-0 mt-3'>
 
                 <div className="header">
                     <div className="two first"><p className='m-0'>Resume </p></div>
@@ -117,12 +117,7 @@ const Resume = () => {
 
                 </div>
 
-                <div className="download">
-                    <a href="/Portfolio2/cv.docx" download="Sonamanayakkar.docx">
-                        <h6 className='cvdownload ' style={{ cursor: "pointer" }} >Download CV</h6>
-
-                    </a>
-                </div>
+                
 
             </div>
         </motion.div>

@@ -22,7 +22,7 @@ p {
 }
 
 .pagecontainer .role {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 500;
     line-height: 70px;
 }
@@ -39,26 +39,46 @@ p {
     font-weight: 600;
 }
 
-.pagecontainer .mainname {
+.pagecontainer .namediv .mainname1 {
     color: var(--green-color);
     /* opacity: 0; */
 
+
+
+}
+
+.pagecontainer .namediv .insidenamediv {
+    transform: translateY(10px);
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    border-right:2px solid var(--green-color);
+    width:0;
+    animation: typing 3s steps(14) infinite alternate-reverse, blink 1s step-end infinite;
 }
 
 .namediv {
     display: inline-block;
-    opacity: 0;
-   animation: namechange 3s linear infinite;
+    width: 14ch;
 }
 
-@keyframes namechange {
+@keyframes typing {
     from {
-        opacity: 0;
-      
+        width: 0;
     }
 
     to {
-       opacity: 1;
+        width: 14ch;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-right: 1px rgb(255, 255, 255) solid;
+    }
+
+    to {
+        border-right: none;
     }
 }
 

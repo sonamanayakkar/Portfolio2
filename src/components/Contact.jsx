@@ -7,7 +7,7 @@ const Contact = () => {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: -100, opacity: 0 }}
             transition={{ duration: 0.5 }} style={{ position: "static", zIndex: -1 }}>
-            <div className='pagecontainer container-fluid p-lg-5 p-3 pb-5  m-lg-0 mt-3'>
+            <div className='pagecontainer container-fluid p-lg-5 p-4 pb-5  m-lg-0 mt-3'>
 
                 <div className="header">
                     <div className="two first"><p className='m-0'>Contact </p></div>

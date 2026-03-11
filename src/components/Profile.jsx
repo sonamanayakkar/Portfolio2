@@ -37,7 +37,8 @@ const Profile = () => {
                 </div>
 
                 <div className="c-2 text-center p-3">
-                    <h6 className='cvdownload'>Contact Me</h6>
+                    <a href="https://wa.me/917904087127" target='_blank'> <h6 className='cvdownload'>Contact Me</h6></a>
+                   
                 </div>
             </div>
         </div >

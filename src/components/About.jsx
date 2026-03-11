@@ -7,7 +7,7 @@ const About = () => {
 
   let [completedproject, setcompletedproject] = useState(1)
   let [technicalproject, settechnicalproject] = useState(1)
-  let [name, setName] = useState({ name: "", condition: true })
+  // let [name, setName] = useState({ name: "", condition: true })
 
   useEffect(() => {
     if (completedproject <= 9) {
@@ -23,19 +23,19 @@ const About = () => {
 
   }, [completedproject, technicalproject])
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (name.condition) {
-        setName({ name: "SONAMANAYAKKAR", condition: false })
-      }
-      else {
-        setName({ name: "MERN Developer", condition: true })
-      }
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (name.condition) {
+  //       setName({ name: "SONAMANAYAKKAR", condition: false })
+  //     }
+  //     else {
+  //       setName({ name: "MERN Developer", condition: true })
+  //     }
 
 
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [name])
+  //   }, 3000);
+  //   return () => clearInterval(interval);
+  // }, [name])
 
 
   return (
@@ -46,8 +46,9 @@ const About = () => {
 
       <div className='pagecontainer banner container-fluid p-lg-5 m-lg-0 mt-3 p-3  '>
         <div className="container scrollcontents ">
-          <h3 className=''>Hello, I’m <div className="namediv m-0" style={{display:"inline-block"}}><span className='mainname'>{name.name}</span></div></h3>
-          <h1 className='role'><span className='course'>MERN </span>  Developer | Electrical & Electronics Engineer</h1>
+          <h3 className=''>Hello, I’m <span className="namediv m-0" style={{ display: "inline-block" }}>
+            <span className="insidenamediv mainname1">SONAMANAYAKKAR</span></span></h3>
+          <h1 className='role'><span className='course'>MERN </span>  Developer | Full Stack Developer</h1>
           <p>Passionate MERN Stack Developer with a strong foundation in software development and electrical engineering. Skilled in building modern web applications using MongoDB, Express.js, React, and Node.js. I enjoy creating clean, responsive, and user-friendly applications while continuously learning new technologies.</p>
           <div className="count container">
             <div className="row row-cols-lg-3 row-cols-2">
