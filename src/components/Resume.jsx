@@ -118,7 +118,10 @@ const Resume = () => {
                 </div>
 
                 <div className="download">
-                    DOWNLOAD CV
+                    <a href="/Portfolio2/cv.docx" download="Sonamanayakkar.docx">
+                        <h6 className='cvdownload ' style={{ cursor: "pointer" }} >Download CV</h6>
+
+                    </a>
                 </div>
 
             </div>

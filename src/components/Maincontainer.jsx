@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import video from "../../public/video.mp4"
 import "./styles/maincontainer.css"
 import Header from './Header'
@@ -15,33 +15,86 @@ import Contact from './Contact'
 const Maincontainer = () => {
     const location = useLocation()
 
-
     let [mode, setMode] = useState(true);
 
-    let togglemode=()=>{
+    let togglemode = () => {
+
+
         setMode(!mode)
+        debugger
+        if (mode) {
+            document.documentElement.style.setProperty("--bg-color", "linear-gradient(to right, #ffffff, rgb(255, 255, 255))")
+            document.documentElement.style.setProperty("--bg-color2", "  linear-gradient(to right, #ffffff, rgb(255, 255, 255))")
+            document.documentElement.style.setProperty("--white-color", "rgb(0, 0, 0)")
+            document.documentElement.style.setProperty("--border-graycolor", " rgba(190, 190, 190, 0.477)")
+              document.documentElement.style.setProperty("--skil-bg", " #ebebeb")
+        }
+        else {
+            document.documentElement.style.setProperty("--bg-color", "linear-gradient(to right, #1B1B1B, rgba(0, 0, 0, 0.39))")
+            document.documentElement.style.setProperty("--bg-color2", " linear-gradient(to right, #1B1B1B, rgb(14, 14, 14))")
+
+            document.documentElement.style.setProperty("--white-color", "#ffff")
+            document.documentElement.style.setProperty("--border-graycolor", " rgba(255, 255, 255, .12)")
+            document.documentElement.style.setProperty("--skil-bg", " #1E1E1E")
+        }
+
         console.log(mode);
-        
+
+
     }
+
 
 
     //mousefollow
 
-     let [mouse, setmouse] = useState({x:0,Y:0});
- 
-    let mousefunction=(e)=>{
+    let [mouse, setmouse] = useState({ x: 0, Y: 0 });
+    let [mediummouse, setmediummouse] = useState({ x: 0, Y: 0 });
+    let [smallmouse, setsmallmouse] = useState({ x: 0, Y: 0 });
+
+    let mousefunction = (e) => {
         setTimeout(() => {
-             setmouse({x:e.clientX,Y:e.clientY})
+            setmouse({ x: e.clientX, Y: e.clientY })
         }, 100);
+        setTimeout(() => {
+            setmediummouse({ x: e.clientX, Y: e.clientY })
+        }, 170);
+        setTimeout(() => {
+            setsmallmouse({ x: e.clientX, Y: e.clientY })
+        }, 300);
     }
-   
+
+
+    let threecolors = (options, mode) => {
+
+        if (options == "yellow" && !mode) {
+            console.log("yellow");
+            document.documentElement.style.setProperty("--green-color", "rgb(255, 208, 0)")
+
+
+        }
+        else if (options == "blue") {
+            console.log("blue");
+            document.documentElement.style.setProperty("--green-color", "rgb(0, 157, 255)")
+
+        }
+        else if (options == "green") {
+            document.documentElement.style.setProperty("--green-color", "#79cc6f")
+        }
+        else {
+            document.documentElement.style.setProperty("--green-color", "#79cc6f")
+        }
+
+
+    }
+
+
     return (
         <div className="maincontainer container-fluid  p-0" onMouseMove={mousefunction}>
             {/* <video src={video} autoPlay muted loop></video> */}
 
-            <div className= {mode?"secondarycontainer container p-0 m-0":"secondarycontainer lightmode container p-0 m-0"} >
+            <div className={"secondarycontainer container p-0 m-0"} style={{ color: "" }}>
 
-                <Header dark={togglemode}/>
+                <Header dark={[togglemode, mode]} color={threecolors} />
                 <Profile />
                 <div className="holdcontainer p-0" >
                     <AnimatePresence mode="wait" >
@@ -59,7 +112,13 @@ const Maincontainer = () => {
                 <div className="contents .container"></div>
             </div>
 
-            <div className="mousefollower" style={{left:mouse.x+"px",top:mouse.Y+"px"}}>
+            <div className="mousefollower" style={{ left: mouse.x + "px", top: mouse.Y + "px" }}>
+
+            </div>
+            <div className="mousefollower mousemediumfollower" style={{ left: mediummouse.x + "px", top: mediummouse.Y + "px" }}>
+
+            </div>
+            <div className="mousefollower mousesmallfollower" style={{ left: smallmouse.x + "px", top: smallmouse.Y + "px" }}>
 
             </div>
 

@@ -9,11 +9,11 @@
   --bg-color2: linear-gradient(to right, #1B1B1B, rgb(14, 14, 14));
   --bg-color: linear-gradient(to right, #1B1B1B, rgba(0, 0, 0, 0.39));
   --green-color: #79cc6f;
-  --white-color: white;
+  --white-color: #ffff;
   --border-graycolor: rgba(255, 255, 255, .12);
   --skil-bg: #1E1E1E;
-  --gray-color:#323232;
-  --black-color:rgb(23, 21, 21);
+  --gray-color: #323232;
+  --black-color: rgb(23, 21, 21);
 }
 
 .lightmode {
@@ -23,18 +23,57 @@
   --white-color: rgb(0, 0, 0);
   --border-graycolor: rgba(190, 190, 190, 0.477);
   --skil-bg: #ebebeb;
-  --gray-color:#323232;
-  --black-color:rgb(230, 230, 230);
+  --gray-color: #323232;
+  --black-color: rgb(230, 230, 230);
 }
-.maincontainer{
+
+.maincontainer {
   position: relative;
 }
-.mousefollower{
+
+.mousefollower {
   position: absolute;
   width: 30px;
   height: 30px;
-  background-color: rgba(110, 214, 110, 0.564);
+  background-color: var(--green-color);
   border-radius: 50%;
   z-index: 10000;
 
+}
+
+.mousemediumfollower {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--green-color);
+  border-radius: 50%;
+  z-index: 10000;
+
+}
+
+.mousesmallfollower {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--green-color);
+  border-radius: 50%;
+  z-index: 10000;
+
+}
+
+@media screen and (max-width:700px) {
+  .mousefollower {
+    display: none;
+
+  }
+
+  .mousemediumfollower {
+    display: none;
+
+  }
+
+  .mousesmallfollower {
+    display: none;
+
+  }
 }

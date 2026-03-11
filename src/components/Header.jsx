@@ -2,19 +2,23 @@ import React, { useState } from 'react'
 import './styles/header.css'
 import { Link } from 'react-router-dom'
 
-const Header = ({dark}) => {
+const Header = ({ dark ,color}) => {
 
   let [bar, setBar] = useState(true);
 
 
   let check = () => {
     setBar(!bar)
-    // console.log(bar);
 
 
   }
 
+  console.log(color);
+  
+
  
+
+
   return (
     <header className='d-flex flex-lg-column gap-3 p-lg-0'>
       <div className="nameandrole" >
@@ -23,14 +27,23 @@ const Header = ({dark}) => {
       </div>
 
       <div className="customizations">
-        <div className="two mb-lg-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+        <div className="two mb-lg-3 filter"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
           fill="currentColor" viewBox="0 0 24 24" > <path d="M8.5 1.5C6.92 1.5 5.6 2.56 5.16 4H2v2h3.16c.43 1.44 1.76 2.5 3.34 2.5s2.9-1.06 3.34-2.5H22V4H11.84A3.495 3.495 0 0 0 8.5 1.5m0 5C7.67 6.5 7 5.83 7 5s.67-1.5 1.5-1.5S10 4.17 10 5s-.67 1.5-1.5 1.5m0 9c-1.58 0-2.9 1.06-3.34 2.5H2v2h3.16c.43 1.44 1.76 2.5 3.34 2.5s2.9-1.06 3.34-2.5H22v-2H11.84a3.495 3.495 0 0 0-3.34-2.5m0 5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5m8-12c-1.58 0-2.9 1.06-3.34 2.5H2v2h11.16c.43 1.44 1.76 2.5 3.34 2.5s2.9-1.06 3.34-2.5H22v-2h-2.16a3.495 3.495 0 0 0-3.34-2.5m0 5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5"></path>
-        </svg></div>
+        </svg>
+        <div className="colors">
+          <div className="color yellow" onClick={()=>color("yellow")}></div>
+          <div className="color blue" onClick={()=>color("blue")}></div>
+          <div className="color green" onClick={()=>color("green")}></div>
+        </div>
+        
+        </div>
 
-        <div className="two" onClick={dark}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-          fill="currentColor" viewBox="0 0 24 24" >
-          <path d="M12 17.01c2.76 0 5.01-2.25 5.01-5.01S14.76 6.99 12 6.99 6.99 9.24 6.99 12s2.25 5.01 5.01 5.01M12 9c1.66 0 3.01 1.35 3.01 3.01s-1.35 3.01-3.01 3.01-3.01-1.35-3.01-3.01S10.34 9 12 9m1 10h-2v3h2zm0-17h-2v3h2zM2 11h3v2H2zm17 0h3v2h-3zM4.22 18.36l.71.71.71.71 1.06-1.06 1.06-1.06-.71-.71-.71-.71-1.06 1.06zM19.78 5.64l-.71-.71-.71-.71-1.06 1.06-1.06 1.06.71.71.71.71 1.06-1.06zm-12.02.7L6.7 5.28 5.64 4.22l-.71.71-.71.71L5.28 6.7l1.06 1.06.71-.71zm8.48 11.32 1.06 1.06 1.06 1.06.71-.71.71-.71-1.06-1.06-1.06-1.06-.71.71z"></path>
-        </svg></div>
+        <div className="two" onClick={dark[0]}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          fill="currentColor" viewBox="0 0 24 24" style={dark[1] ? { display: "block" } : { display: "none" }}>
+          <path d="M12 17.01c2.76 0 5.01-2.25 5.01-5.01S14.76 6.99 12 6.99 6.99 9.24 6.99 12s2.25 5.01 5.01 5.01M12 9c1.66 0 3.01 1.35 3.01 3.01s-1.35 3.01-3.01 3.01-3.01-1.35-3.01-3.01S10.34 9 12 9m1 10h-2v3h2zm0-17h-2v3h2zM2 11h3v2H2zm17 0h3v2h-3zM4.22 18.36l.71.71.71.71 1.06-1.06 1.06-1.06-.71-.71-.71-.71-1.06 1.06zM19.78 5.64l-.71-.71-.71-.71-1.06 1.06-1.06 1.06.71.71.71.71 1.06-1.06zm-12.02.7L6.7 5.28 5.64 4.22l-.71.71-.71.71L5.28 6.7l1.06 1.06.71-.71zm8.48 11.32 1.06 1.06 1.06 1.06.71-.71.71-.71-1.06-1.06-1.06-1.06-.71.71z" ></path>
+        </svg>
+          <i class="fa-regular fa-moon" style={dark[1] ? { display: "none" } : { display: "block" }}></i>
+        </div>
       </div>
       <div className={bar ? "navs d-flex flex-column gap-2 m-0" : " navs navscome d-flex flex-column gap-2 m-0"}>
         <Link to='/' onClick={() => setBar(true)}>
