@@ -1,18 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './styles/profile.css'
 import profile from './images/profile.png'
 
 const Profile = () => {
 
    
+
     return (
-        <div className='profilecontainer container-fluid d-flex flex-column p-0 m-lg-0 mt-5' >
+        <div className='profilecontainer  container-fluid d-flex flex-column p-0 m-lg-0 mt-5' >
             <div className="container two wh">
                 <div className="image mb-4">
                     <img src={profile} className="img-fluid" alt="..."></img>
                 </div>
 
                 <div className="informations">
+                    
                     <h5 className='text-center rolee'>Fullstack Developer</h5>
                     <h3 className='text-center  name'>SONAMANAYAKKAR</h3>
                     <div className="apps ">

@@ -53,13 +53,13 @@ const Maincontainer = () => {
 
     let mousefunction = (e) => {
         setTimeout(() => {
-            setmouse({ x: e.clientX, Y: e.clientY })
+            setmouse({ x: (e.clientX), Y: (e.clientY)+15 })
         }, 100);
         setTimeout(() => {
-            setmediummouse({ x: e.clientX, Y: e.clientY })
+            setmediummouse({ x: (e.clientX), Y:(e.clientY)+15 })
         }, 170);
         setTimeout(() => {
-            setsmallmouse({ x: e.clientX, Y: e.clientY })
+            setsmallmouse({ x: (e.clientX), Y: (e.clientY)+15})
         }, 300);
     }
 

@@ -20,6 +20,9 @@ header .fa-bars {
 }
 
 header .two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: var(--bg-color);
     padding: 25px;
     border-radius: 50%;

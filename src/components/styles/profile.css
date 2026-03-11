@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background: var(--bg-color);
-    
+
 }
 
 .profilecontainer .two .image {
@@ -38,7 +38,14 @@
 }
 
 .profilecontainer .two .fi {
-    border-right:  var(--border-graycolor) solid 1px;
+    border-right: var(--border-graycolor) solid 1px;
+}
+
+.profilecontainer .informations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .profilecontainer .informations .apps {
@@ -52,16 +59,47 @@
     border-radius: 40%;
     padding: 10px;
     cursor: pointer;
+    transition: .3s ease;
 
+}
+
+.profilecontainer .informations .apps .app:hover{
+    transform: translateY(-10px);
 }
 
 .profilecontainer .informations .name {
     font-weight: 700;
     line-height: 80px;
 }
+
+
+
 .profilecontainer .informations .rolee {
     font-weight: 500;
     color: var(--green-color);
+    width: 18ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s  steps(18) , blink 1s step-end ;
+
+}
+
+@keyframes typing {
+    from{
+          width: 0px;
+    }
+    to{
+         width: 18ch;
+    }
+}
+
+@keyframes blink {
+    from{
+        border-right:1px rgb(255, 255, 255) solid;
+    }
+    to{
+         border-right:none;
+    }
 }
 
 .profilecontainer .informations .apps .app:hover i {
@@ -79,11 +117,11 @@
 @media screen and (max-width:800px) {
 
     .profilecontainer {
-    border-radius: 0;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--bg-color);
-}
+        border-radius: 0;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--bg-color);
+    }
 
 
 

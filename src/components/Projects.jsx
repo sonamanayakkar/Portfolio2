@@ -10,7 +10,7 @@ const Projects = () => {
         <motion.div initial={{ y: -100, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -100, opacity: 0 }}
-            transition={{ duration: 0.5 }} style={{ position: "static", zIndex: -1 ,transformOrigin:"left"}}>
+            transition={{ duration: 0.5 }} style={{ position: "static", zIndex: -1, transformOrigin: "left" }}>
             <div className='pagecontainer container-fluid p-lg-5 p-3 pb-5  m-lg-0 mt-3'>
 
                 <div className="header">
@@ -37,7 +37,10 @@ const Projects = () => {
                             </div>
 
                             <div className="two">
-                                <a href="" target='_blank' className='m-0'><div className="arrow m-0"><i className="fa-solid fa-arrow-up-right-from-square"></i></div></a>
+                                <a href="https://sonamanayakkar.github.io/CreamCraft-Online-Cake-Ordering-System/home.html" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="currentColor" viewBox="0 0 24 24" >
+                                    <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
+                                </svg></div></a>
                             </div>
                         </div>
                     </div>
@@ -59,7 +62,10 @@ const Projects = () => {
                             </div>
 
                             <div className="two">
-                                <a href="" target='_blank' className='m-0'><div className="arrow m-0"><i className="fa-solid fa-arrow-up-right-from-square"></i></div></a>
+                                <a href="https://spicyhunt-ebon.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="currentColor" viewBox="0 0 24 24" >
+                                    <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
+                                </svg></div></a>
                             </div>
                         </div>
                     </div>
@@ -72,8 +78,8 @@ const Projects = () => {
 
                         <div className="contents p-3">
                             <div className="two">
-                                <h5>Cream Craft</h5>
-                               <div className="usetools">
+                                <h5>Rhythmix</h5>
+                                <div className="usetools">
                                     <div className="smallbox ">Html</div>
                                     <div className="smallbox">Css</div>
                                     <div className="smallbox">Bootstrap</div>
@@ -82,7 +88,10 @@ const Projects = () => {
                             </div>
 
                             <div className="two">
-                                <a href="" target='_blank' className='m-0'><div className="arrow m-0"><i className="fa-solid fa-arrow-up-right-from-square"></i></div></a>
+                                <a href="https://online-music-instruments-store-with.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="currentColor" viewBox="0 0 24 24" >
+                                    <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
+                                </svg></div></a>
                             </div>
                         </div>
                     </div>
@@ -95,12 +104,20 @@ const Projects = () => {
 
                         <div className="contents p-3">
                             <div className="two">
-                                <h5>Cream Craft</h5>
-                                <div className="smallbox">Html</div>
+                                <h5>Employee's Salary Management System</h5>
+                                 <div className="usetools">
+                                    <div className="smallbox ">Html</div>
+                                    <div className="smallbox">Css</div>
+                                    <div className="smallbox">Bootstrap</div>
+                                    <div className="smallbox">Java Script</div>
+                                </div>
                             </div>
 
                             <div className="two">
-                                <a href="" target='_blank' className='m-0'><div className="arrow m-0"><i className="fa-solid fa-arrow-up-right-from-square"></i></div></a>
+                                <a href="https://employee-database-management-panel.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    fill="currentColor" viewBox="0 0 24 24" >
+                                    <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
+                                </svg></div></a>
                             </div>
                         </div>
                     </div>
