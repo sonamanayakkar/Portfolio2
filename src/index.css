@@ -4,6 +4,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+  font-family: "Iceland", sans-serif;
 }
 
 h1,h2,h3,h4 {
@@ -11,6 +13,9 @@ h1,h2,h3,h4 {
 }
 h5{
    font-family: "Zen Dots", sans-serif;
+}
+h6{
+  font-size: 1.2rem;
 }
 p{
     font-family: "Iceland", sans-serif;
@@ -38,7 +43,7 @@ p{
   --border-graycolor: rgba(190, 190, 190, 0.477);
   --skil-bg: #ebebeb;
   --gray-color: #323232;
-  --black-color: rgb(230, 230, 230);
+  --black-color:  ;
 }
 
 .maincontainer {

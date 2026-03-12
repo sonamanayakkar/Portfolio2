@@ -27,7 +27,8 @@ const Maincontainer = () => {
             document.documentElement.style.setProperty("--bg-color2", "  linear-gradient(to right, #ffffff, rgb(255, 255, 255))")
             document.documentElement.style.setProperty("--white-color", "rgb(0, 0, 0)")
             document.documentElement.style.setProperty("--border-graycolor", " rgba(190, 190, 190, 0.477)")
-              document.documentElement.style.setProperty("--skil-bg", " #ebebeb")
+            document.documentElement.style.setProperty("--skil-bg", " #ebebeb")
+            document.documentElement.style.setProperty("--black-color", "rgb(230, 230, 230)")
         }
         else {
             document.documentElement.style.setProperty("--bg-color", "linear-gradient(to right, #1B1B1B, rgba(0, 0, 0, 0.39))")
@@ -36,6 +37,7 @@ const Maincontainer = () => {
             document.documentElement.style.setProperty("--white-color", "#ffff")
             document.documentElement.style.setProperty("--border-graycolor", " rgba(255, 255, 255, .12)")
             document.documentElement.style.setProperty("--skil-bg", " #1E1E1E")
+            document.documentElement.style.setProperty("--black-color", " rgb(23, 21, 21)")
         }
 
         console.log(mode);
@@ -53,13 +55,13 @@ const Maincontainer = () => {
 
     let mousefunction = (e) => {
         setTimeout(() => {
-            setmouse({ x: (e.clientX), Y: (e.clientY)+15 })
+            setmouse({ x: (e.clientX), Y: (e.clientY) + 15 })
         }, 100);
         setTimeout(() => {
-            setmediummouse({ x: (e.clientX), Y:(e.clientY)+15 })
+            setmediummouse({ x: (e.clientX), Y: (e.clientY) + 15 })
         }, 170);
         setTimeout(() => {
-            setsmallmouse({ x: (e.clientX), Y: (e.clientY)+15})
+            setsmallmouse({ x: (e.clientX), Y: (e.clientY) + 15 })
         }, 300);
     }
 

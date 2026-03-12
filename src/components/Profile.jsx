@@ -22,7 +22,7 @@ const Profile = () => {
                         <a href="https://www.linkedin.com/in/sonamanayakkar-e-98bab0352/" target='_blank'><div className="app"><i className="fa-brands fa-linkedin-in"></i></div></a>
 
 
-                        <div className="app"><i className="fa-brands fa-whatsapp"></i></div>
+                        <a href="https://wa.me/917904087127" target='_blank'> <div className="app"><i className="fa-brands fa-whatsapp"></i></div></a>
                         <a href="https://www.instagram.com/sonu__mom__little_king/?hl=en"> <div className="app"><i className="fa-brands fa-instagram"></i></div></a>
 
                     </div>
