@@ -1,7 +1,39 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './styles/contact.css'
 import { motion } from "framer-motion";
 const Contact = () => {
+
+    let [info, setInfo] = useState({ name: '', email: '', message: '' })
+
+    let formfill = (e) => {
+        e.preventDefault()
+        let date = new Date()
+
+        const templateparameters = {
+            email: info.email,
+            name: info.name,
+            message: info.message,
+            time: date.toLocaleTimeString()
+        }
+
+        emailjs.send("service_ecqfehk", "template_twzziy5", templateparameters)
+            .then(() => {
+                console.log("successfull");
+
+                setInfo({
+                    name: '', email: '', message: ''
+                })
+            })
+            .catch(err => alert("Failed"));
+
+
+
+
+    }
+
+    
+
+
     return (
         <motion.div initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -53,18 +85,18 @@ const Contact = () => {
                 </div>
 
                 <div className="contacts">
-                    <form className="row g-3">
+                    <form className="row g-3" onSubmit={formfill}>
                         <div className="col-md-6">
                             <label htmlFor="inputEmail4" className="form-label">Full Name</label><br />
-                            <input type="text" className="w-100 " id="inputEmail4" style={{ height: "8vh" }} />
+                            <input type="text" className="w-100 " required id="inputEmail4" style={{ height: "8vh" }} value={info.name} onChange={(e) => setInfo({ ...info, name: e.target.value })} />
                         </div>
                         <div className="col-md-6">
                             <label htmlFor="inputEmail4" className="form-label">Email</label><br />
-                            <input type="email" className="w-100 " id="inputEmail4" style={{ height: "8vh" }} />
+                            <input type="email" className="w-100 " required id="inputEmail4" style={{ height: "8vh" }} value={info.email}  onChange={(e) => setInfo({ ...info, email: e.target.value })} />
                         </div>
                         <div className="col-12">
-                             <label htmlFor="inputEmail4" className="form-label">Your Message</label><br />
-                            <textarea name="" id="" className="w-100 " style={{ height: "30vh" }}></textarea>
+                            <label htmlFor="inputEmail4" className="form-label">Your Message</label><br />
+                            <textarea name="" id="" className="w-100 " required style={{ height: "30vh" }} value={info.message} onChange={(e) => setInfo({ ...info, message: e.target.value })}></textarea>
                         </div>
 
                         <div className="col-12">
