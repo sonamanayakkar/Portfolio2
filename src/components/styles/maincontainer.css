@@ -28,7 +28,7 @@
   align-items: center;
   height: 90%;
   gap: 10px;
-  animation: onload 1s ease-in;
+  /* animation: onload 1s ease-in; */
 }
 
 @keyframes onload {
