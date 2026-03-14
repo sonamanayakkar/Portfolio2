@@ -54,21 +54,21 @@ p {
     white-space:nowrap;
     border-right:2px solid var(--green-color);
     width:0;
-    animation: typing 3s steps(14) infinite alternate-reverse, blink 1s step-end infinite;
+    animation: typing2 3s steps(14) infinite alternate-reverse, blink 1s step-end infinite;
 }
 
 .namediv {
     display: inline-block;
-    width: 14ch;
+    width: 18ch;
 }
 
-@keyframes typing {
+@keyframes typing2 {
     from {
         width: 0;
     }
 
     to {
-        width: 14ch;
+        width: 18ch;
     }
 }
 
