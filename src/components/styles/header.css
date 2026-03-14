@@ -263,7 +263,7 @@ header .navs .box .notify span {
     .customizations {
         position: relative;
         position: absolute;
-        right: 30px;
+        right: 20px;
         top: 200%;
         display: flex;
         gap: 20px;
@@ -272,7 +272,7 @@ header .navs .box .notify span {
 
     .filter:hover .colors {
         opacity: 1;
-         left: -250%;
+         left: -320%;
     }
 
     .customizations .two {
@@ -282,8 +282,8 @@ header .navs .box .notify span {
     }
 
     .customizations svg{
-        width: 15px;
-        height: 15px;
+        width: 17px;
+        height: 17px;
     }
 
 }
