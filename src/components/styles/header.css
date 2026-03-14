@@ -276,9 +276,14 @@ header .navs .box .notify span {
     }
 
     .customizations .two {
-        padding: 20px;
+        padding: 15px;
         background: var(--green-color);
         /* background-color: rgb(7, 58, 42); */
+    }
+
+    .customizations svg{
+        width: 15px;
+        height: 15px;
     }
 
 }
