@@ -28,18 +28,18 @@
   align-items: center;
   height: 90%;
   gap: 10px;
-  /* animation: onload 1s ease-in; */
+  animation: onload 1s ease-in;
 }
 
 @keyframes onload {
 
   from {
-    transform: scale(0) translateY(-30%) translateX(-100%);
+    
     opacity: 0;
   }
 
   to {
-    transform: scale(1) translateX(0) translateY(0);
+    
     opacity: 1;
   }
 }
