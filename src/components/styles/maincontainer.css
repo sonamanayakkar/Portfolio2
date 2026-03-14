@@ -28,6 +28,20 @@
   align-items: center;
   height: 90%;
   gap: 10px;
+  animation: onload 1s ease-in;
+}
+
+@keyframes onload {
+
+  from {
+    transform: scale(0) translateY(-30%) translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1) translateX(0) translateY(0);
+    opacity: 1;
+  }
 }
 
 .holdcontainer {
@@ -37,6 +51,19 @@
 
 
 @media screen and (max-width:800px) {
+
+  @keyframes onload {
+
+    from {
+      
+      opacity: 0;
+    }
+
+    to {
+      
+      opacity: 1;
+    }
+  }
 
 
   .secondarycontainer {
@@ -57,30 +84,30 @@
     background: url(/src/components/images/bg/bg.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-}
+  }
 
-header .nameandrole{
-  display: block;
-}
+  header .nameandrole {
+    display: block;
+  }
 
-.customizations {
-  display: flex;
-}
+  .customizations {
+    display: flex;
+  }
 
-header .fa-xmark{
-  display: block;
-}
+  header .fa-xmark {
+    display: block;
+  }
 
-header {
-  width: 100%;
-  background-color: red;
-  position: relative;
-}
+  header {
+    width: 100%;
+    background-color: red;
+    position: relative;
+  }
 
-header .navs{
-  position: absolute;
-  width: 100%;
-}
+  header .navs {
+    position: absolute;
+    width: 100%;
+  }
 
 
 

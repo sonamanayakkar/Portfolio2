@@ -20,8 +20,8 @@ const Maincontainer = () => {
     let togglemode = () => {
 
 
-        setMode(!mode)
-        debugger
+        setMode(!mode) //false = dark mode  , true = light mode
+      
         if (mode) {
             document.documentElement.style.setProperty("--bg-color", "linear-gradient(to right, #ffffff, rgb(255, 255, 255))")
             document.documentElement.style.setProperty("--bg-color2", "  linear-gradient(to right, #ffffff, rgb(255, 255, 255))")
@@ -39,9 +39,6 @@ const Maincontainer = () => {
             document.documentElement.style.setProperty("--skil-bg", " #1E1E1E")
             document.documentElement.style.setProperty("--black-color", " rgb(23, 21, 21)")
         }
-
-        console.log(mode);
-
 
     }
 
