@@ -135,6 +135,7 @@ header .navs .box .notify span {
     background-color: rgb(126, 255, 171);
 }
 
+ 
 
 @media screen and (max-width:800px) {
 
@@ -276,8 +277,8 @@ header .navs .box .notify span {
 
     .customizations .two {
         padding: 20px;
-        background: var(--bg-color2);
-        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.296);
+        background: var(--green-color);
+        /* background-color: rgb(7, 58, 42); */
     }
 
 }
