@@ -237,7 +237,7 @@ header .navs .box .notify span {
     }
 
     header .navs .box .notify span {
-        font-size: 1rem;
+        font-size: .8rem;
         font-weight: 700;
         color: var(--white-color);
     }
