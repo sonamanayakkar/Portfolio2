@@ -70,11 +70,41 @@ textarea {
 }
 
 .pagecontainer .contacts button {
+    position: relative;
     color: var(--white-color);
     font-weight: 600;
-    background-color: var(--black-color);
+    /* background-color: var(--black-color); */
     border: 1px solid var(--green-color);
+    overflow: hidden;
 }
+.pagecontainer .contacts button span{
+    position: relative;
+    z-index: 2;
+    color: var(--white-color);
+}
+.pagecontainer .contacts button:hover span{
+    color: var(--black-color);
+}
+
+.pagecontainer .contacts button::before{
+    position: absolute;
+    content: "";
+    width: 150%;
+    height: 100%;
+    top: 0;
+    left: -180%;
+    background-color: var(--white-color);
+    z-index: 1;
+    transition: .5s ease-in-out;
+    transform: skew(60deg);
+}
+.pagecontainer .contacts button:hover::before{
+    left:-10%;
+    transform: skew(-20deg);
+    
+    
+}
+
 
 @media screen and (max-width:800px) {
 

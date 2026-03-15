@@ -100,7 +100,7 @@ const Contact = () => {
                         </div>
 
                         <div className="col-12">
-                            <button type="submit" className="btn ">Send Message</button>
+                            <button type="submit" className="btn "><span>send message</span></button>
                         </div>
                     </form>
                 </div>

@@ -6,27 +6,28 @@
   box-sizing: border-box;
   
   font-family: "Iceland", sans-serif;
-    /* font-family: "Poppins", sans-serif; */
+    font-family: "Poppins", sans-serif;
     
 }
 
 h1,h2,h3,h4 {
   font-family: "Audiowide", sans-serif;
-  /* font-family: "Poppins", sans-serif; */
+  font-family: "Poppins", sans-serif;
 }
 h5{
    font-family: "Zen Dots", sans-serif;
-   /* font-family: "Poppins", sans-serif; */
+   font-family: "Poppins", sans-serif;
+   
 }
 h6{
-  font-size: 1.2rem;
+  font-size: .9rem;
 }
 p{
     font-family: "Iceland", sans-serif;
-    /* font-family: "Poppins", sans-serif;
-      font-family: "Ubuntu", sans-serif; */
+    /* font-family: "Poppins", sans-serif; */
+      font-family: "Ubuntu", sans-serif;
     font-size: 1.2rem;
-    /* font-size: 1rem; */
+    font-size: 1rem;
     font-weight: 500;
 }
 
