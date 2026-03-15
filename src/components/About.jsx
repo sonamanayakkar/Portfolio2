@@ -51,17 +51,17 @@ const About = () => {
           <h1 className='role'><span className='course'>MERN </span>  Developer | Full Stack Developer</h1>
           <p>Passionate MERN Stack Developer with a strong foundation in Web development and electrical engineering. Skilled in building modern web applications using MongoDB, Express.js, React, and Node.js. I enjoy creating clean, responsive, and user-friendly applications while continuously learning new technologies.</p>
           <div className="count container">
-            <div className="row row-cols-lg-3 row-cols-2">
+            <div className="row row-cols-lg-3 row-cols-1">
 
               <div className="col  d-flex align-items-center gap-3">
                 <h1 className='fw-normal' >{completedproject}</h1>
                 <p className='completed'>Completed Projects</p>
               </div>
-              <div className="col  d-flex align-items-center gap-2">
+              <div className="col  d-flex align-items-center   gap-3">
                 <h1 className='fw-normal'>1</h1>
                 <p className='completed'>Years of Learning & Development</p>
               </div>
-              <div className="col  d-flex align-items-center gap-2">
+              <div className="col  d-flex align-items-center   gap-3">
                 <h1 className=' fw-normal'>{technicalproject}</h1>
                 <p className='completed'> Technical Projects & Innovations</p>
               </div>

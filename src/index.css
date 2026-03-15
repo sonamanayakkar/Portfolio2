@@ -27,8 +27,8 @@ p{
     /* font-family: "Poppins", sans-serif; */
       font-family: "Ubuntu", sans-serif;
     font-size: 1.2rem;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: .9rem;
+    font-weight: 400;
 }
 
 
@@ -40,7 +40,7 @@ p{
   --border-graycolor: rgba(255, 255, 255, .12);
   --skil-bg: #1E1E1E;
   --gray-color: #323232;
-  --black-color: rgb(23, 21, 21);
+  --black-color: rgb(0, 0, 0);
 }
 
 .lightmode {

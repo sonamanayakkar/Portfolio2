@@ -30,7 +30,7 @@
 
 .pagecontainer .contacts .up .three .l p {
     color: rgb(161, 161, 161);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -44,6 +44,7 @@
 .pagecontainer .contacts label {
     color: rgb(149, 149, 149);
     font-weight: 500;
+    font-size: .9rem;
 }
 
 .pagecontainer .contacts input,
@@ -73,14 +74,16 @@ textarea {
     position: relative;
     color: var(--white-color);
     font-weight: 600;
-    /* background-color: var(--black-color); */
-    border: 1px solid var(--green-color);
+    background-color: var(--black-color);
+    /* border: 1px solid var(--green-color); */
     overflow: hidden;
 }
 .pagecontainer .contacts button span{
     position: relative;
     z-index: 2;
     color: var(--white-color);
+    font-size: .8rem;
+    font-weight: 500;
 }
 .pagecontainer .contacts button:hover span{
     color: var(--black-color);

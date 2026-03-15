@@ -19,6 +19,8 @@
 h3,
 p {
     color: var(--white-color);
+
+    line-height: 40px;
 }
 
 .pagecontainer .role {
@@ -49,11 +51,11 @@ p {
 
 .pagecontainer .namediv .insidenamediv {
     transform: translateY(10px);
-    display:inline-block;
-    overflow:hidden;
-    white-space:nowrap;
-    border-right:2px solid var(--green-color);
-    width:0;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid var(--green-color);
+    width: 0;
     animation: typing2 3s steps(14) infinite alternate-reverse, blink 1s step-end infinite;
 }
 
@@ -125,7 +127,6 @@ p {
     }
 
     .pagecontainer .count p {
-        color: rgb(202, 202, 202);
         font-weight: 500;
         font-size: .9rem;
     }
