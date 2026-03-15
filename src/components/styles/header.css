@@ -9,6 +9,7 @@ header .nameandrole {
 
 header .nameandrole h5 {
     color: var(--white-color);
+    font-weight: 700;
 }
 
 header .nameandrole h6 {

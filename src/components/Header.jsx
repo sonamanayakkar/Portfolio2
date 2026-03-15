@@ -19,7 +19,7 @@ const Header = ({ dark, color }) => {
   return (
     <header className='d-flex flex-lg-column gap-3 p-lg-0'>
       <div className="nameandrole" >
-        <h5>Sonamanayakkar</h5>
+        <h5>SONAMANAYAKKAR</h5>
         <h6>Full stack Developer</h6>
       </div>
 
