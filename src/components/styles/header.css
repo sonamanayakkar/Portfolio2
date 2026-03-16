@@ -141,7 +141,7 @@ header .navs .box .notify span {
 @media screen and (max-width:800px) {
 
     :root {
-        --bg-color: #0C0C0C;
+        /* --bg-color: #0C0C0C; */
     }
 
 
