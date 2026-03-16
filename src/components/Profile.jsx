@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import './styles/profile.css'
 import profile from './images/profile.png'
+import { motion } from 'framer-motion'
 
 const Profile = () => {
 
    
 
     return (
+        <motion.div initial={{y:-500,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:2}}>
         <div className='profilecontainer  container-fluid d-flex flex-column p-0 m-lg-0 mt-5' >
             <div className="container two wh">
                 <div className="image mb-4">
@@ -32,16 +34,17 @@ const Profile = () => {
             <div className="container two two2 p-0">
                 <div className="c-2 fi text-center p-3" >
                     <a href="/Portfolio2/cv.docx" download="Sonamanayakkar.docx">
-                        <h6 className='cvdownload ' style={{ cursor: "pointer" }} >Download CV</h6>
+                        <h6 className='cvdownload ' style={{ cursor: "pointer" }} >Download CV<i className="fa-solid fa-download ms-2"></i></h6>
                     </a>
                 </div>
 
                 <div className="c-2 text-center p-3">
-                    <a href="https://wa.me/917904087127" target='_blank'> <h6 className='cvdownload'>Contact Me</h6></a>
+                    <a href="https://wa.me/917904087127" target='_blank'> <h6 className='cvdownload'>Contact Me<i className="fa-solid fa-address-book ms-2"></i></h6></a>
                    
                 </div>
             </div>
         </div >
+        </motion.div>
     )
 }
 

@@ -11,6 +11,7 @@ import { AnimatePresence } from "framer-motion";
 import Projects from './Projects'
 import Resume from './Resume'
 import Contact from './Contact'
+import { motion } from 'framer-motion'
 
 const Maincontainer = () => {
     const location = useLocation()
@@ -21,7 +22,7 @@ const Maincontainer = () => {
 
 
         setMode(!mode) //false = dark mode  , true = light mode
-      
+
         if (mode) {
             document.documentElement.style.setProperty("--bg-color", "linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.69))")
             document.documentElement.style.setProperty("--bg-color2", "  linear-gradient(to right, #ffffff, rgb(255, 255, 255))")
@@ -88,6 +89,9 @@ const Maincontainer = () => {
 
 
     return (
+
+
+
         <div className="maincontainer container-fluid  p-0" onMouseMove={mousefunction}>
             {/* <video src={video} autoPlay muted loop></video> */}
 
@@ -95,21 +99,24 @@ const Maincontainer = () => {
 
                 <Header dark={[togglemode, mode]} color={threecolors} />
                 <Profile />
-                <div className="holdcontainer p-0" >
-                    <AnimatePresence mode="wait" >
-                        <Routes location={location} key={location.pathname}>
-                            <Route path='/' element={<About />} />
-                            <Route path='/skills' element={<Skills />} />
-                            <Route path='/projects' element={<Projects />} />
-                            <Route path='/resume' element={<Resume />} />
-                            <Route path='/contact' element={<Contact />} />
+                <motion.div initial={{y:400,opacity:0,}} animate={{y:0, opacity: 1,}} transition={{ duration: 2 }}>
+                    <div className="holdcontainer p-0" >
+                        <AnimatePresence mode="wait" >
+                            <Routes location={location} key={location.pathname}>
+                                <Route path='/' element={<About />} />
+                                <Route path='/skills' element={<Skills />} />
+                                <Route path='/projects' element={<Projects />} />
+                                <Route path='/resume' element={<Resume />} />
+                                <Route path='/contact' element={<Contact />} />
 
-                        </Routes>
-                    </AnimatePresence>
-                </div>
+                            </Routes>
+                        </AnimatePresence>
+                    </div>
+                </motion.div>
 
                 <div className="contents .container"></div>
             </div>
+
 
             <div className="mousefollower" style={{ left: mouse.x + "px", top: mouse.Y + "px" }}>
 
@@ -122,6 +129,7 @@ const Maincontainer = () => {
             </div>
 
         </div>
+
     )
 }
 
