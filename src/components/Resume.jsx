@@ -129,7 +129,7 @@ const Resume = () => {
                 </div>
 
                <div className="resume">
-                    <iframe src="../../public/cv.pdf" >
+                    <iframe src="/cv.pdf" >
 
                     </iframe>
                </div>
