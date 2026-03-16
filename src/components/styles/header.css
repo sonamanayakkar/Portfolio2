@@ -145,16 +145,7 @@ header .navs .box .notify span {
     }
 
 
-    .maincontainer {
-        position: relative;
-        height: fit-content;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: url(/src/components/images/bg/bg.jpg) no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
+   
 
     header .nameandrole {
         display: block;

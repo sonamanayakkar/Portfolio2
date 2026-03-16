@@ -39,7 +39,7 @@ const Profile = () => {
                     </div>
 
                     <div className="c-2 text-center p-3">
-                        <a href="https://wa.me/917904087127" target='_blank'> <h6 className='cvdownload'>Contact Me<i className="fa-solid fa-address-book ms-2"></i></h6></a>
+                        <a href="tel:+917904087127" target='_blank'> <h6 className='cvdownload'>Contact Me<i className="fa-solid fa-address-book ms-2"></i></h6></a>
 
                     </div>
                 </div>
