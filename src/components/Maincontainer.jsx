@@ -24,11 +24,11 @@ const Maincontainer = () => {
         setMode(!mode) //false = dark mode  , true = light mode
 
         if (mode) {
-            document.documentElement.style.setProperty("--bg-color", "linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.69))")
+            document.documentElement.style.setProperty("--bg-color", "linear-gradient(to right, #ffffff, rgb(255, 255, 255))")
             document.documentElement.style.setProperty("--bg-color2", "  linear-gradient(to right, #ffffff, rgb(255, 255, 255))")
             document.documentElement.style.setProperty("--white-color", "rgb(0, 0, 0)")
             document.documentElement.style.setProperty("--border-graycolor", " rgba(190, 190, 190, 0.477)")
-            document.documentElement.style.setProperty("--skil-bg", " #ffffff")
+            document.documentElement.style.setProperty("--skil-bg", " #b5b5b5")
             document.documentElement.style.setProperty("--black-color", "rgb(230, 230, 230)")
         }
         else {
@@ -99,7 +99,7 @@ const Maincontainer = () => {
 
                 <Header dark={[togglemode, mode]} color={threecolors} />
                 <Profile />
-                <motion.div initial={{y:400,opacity:0,}} animate={{y:0, opacity: 1,}} transition={{ duration: 2 }}>
+                <motion.div initial={{x:-50,opacity:0,}} animate={{x:0, opacity: 1,}} transition={{ duration: .5,delay:1,ease:"easeInOut" }} style={{zIndex:0}}>
                     <div className="holdcontainer p-0" >
                         <AnimatePresence mode="wait" >
                             <Routes location={location} key={location.pathname}>

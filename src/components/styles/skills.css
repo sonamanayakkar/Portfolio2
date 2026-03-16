@@ -55,8 +55,12 @@
 
 .pagecontainer .skillcontainer .outsidedrop {
     position: relative;
+    /* animation: googly 2s ease-in-out infinite alternate-reverse; */
+   
    
 }
+
+
 
 .pagecontainer .skillcontainer .drop {
 
@@ -74,7 +78,9 @@
 
 @keyframes border {
     from{
-        box-shadow: 0px 0px 3px 1px var(--green-color);
+        box-shadow: 0px 0px 5px 1px var(--green-color);
+       
+        /* transform: rotate(360deg); */
     }
 }
 
@@ -87,8 +93,8 @@
     content: "";
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.292);
-    transition: .4s ease;
+    background-color: rgb(255, 255, 255);
+    transition: .7s ease;
 }
 
 

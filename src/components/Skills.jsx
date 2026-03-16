@@ -36,61 +36,72 @@ const Skills = () => {
 
                     <div className="skillcontainer container">
 
-                        <div className="outsidedrop">
-                            <div className="drop ">
-                                <div className="skill">
-                                    <img src={html} alt="" />
+                        <motion.div initial={{x:-30, opacity: 0 }} animate={{x:0, opacity: 1 }} transition={{ duration: .5, delay: .5, ease: "easeIn" }}>
+                            <div className="outsidedrop n1">
+                                <div className="drop ">
+                                    <div className="skill">
+                                        <img src={html} alt="" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>HTML</h4></div>
+                                <div className="slidecontent"> <h4 className='text-center m-0 p-1'>HTML</h4></div>
 
-                        </div>
-                        <div className="outsidedrop">
-                            <div className="drop ">
-                                <div className="skill">
-                                    <img src={css} alt="" />
+                            </div>
+                        </motion.div>
+                        <motion.div initial={{x:-30, opacity: 0 }} animate={{x:0, opacity: 1 }}  transition={{ duration: .5, delay: 1, ease: "easeIn" }}>
+                            <div className="outsidedrop n2">
+                                <div className="drop ">
+                                    <div className="skill">
+                                        <img src={css} alt="" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>CSS</h4></div>
+                                <div className="slidecontent"> <h4 className='text-center m-0 p-1'>CSS</h4></div>
 
-                        </div>
-                        <div className="outsidedrop">
-                            <div className="drop ">
-                                <div className="skill">
-                                    <img src={js} alt="" />
+                            </div>
+                        </motion.div>
+                        <motion.div initial={{x:-30, opacity: 0 }} animate={{x:0, opacity: 1 }}  transition={{ duration: .5, delay: 1.5, ease: "easeIn" }}>
+                            <div className="outsidedrop n3">
+                                <div className="drop ">
+                                    <div className="skill">
+                                        <img src={js} alt="" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Java Script</h4></div>
+                                <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Java Script</h4></div>
 
-                        </div>
-                        <div className="outsidedrop">
-                            <div className="drop ">
-                                <div className="skill">
-                                    <img src={bootstrap} alt="" />
+                            </div>
+                        </motion.div>
+                        <motion.div initial={{x:-30, opacity: 0 }} animate={{x:0, opacity: 1 }}  transition={{ duration: .5, delay: 2, ease: "easeIn" }}>
+                            <div className="outsidedrop n4">
+                                <div className="drop ">
+                                    <div className="skill">
+                                        <img src={bootstrap} alt="" />
+                                    </div>
                                 </div>
+                                <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Bootstrap</h4></div>
+
                             </div>
-                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Bootstrap</h4></div>
-
-                        </div>
-
-                        <div className="outsidedrop">
-                            <div className="drop ">
-                                <div className="skill">
-                                    <img src={jquery} alt="" />
+                        </motion.div>
+                        <motion.div initial={{x:-30, opacity: 0 }} animate={{x:0, opacity: 1 }}  transition={{ duration: .5, delay: 2.5, ease: "easeIn" }}>
+                            <div className="outsidedrop n5">
+                                <div className="drop ">
+                                    <div className="skill">
+                                        <img src={jquery} alt="" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>jQuery</h4></div>
+                                <div className="slidecontent"> <h4 className='text-center m-0 p-1'>jQuery</h4></div>
 
-                        </div>
-                        <div className="outsidedrop">
-                            <div className="drop ">
-                                <div className="skill">
-                                    <img src={react} alt="" />
+                            </div>
+                        </motion.div>
+                        <motion.div initial={{x:-30, opacity: 0 }} animate={{x:0, opacity: 1 }}  transition={{ duration: .5, delay: 3, ease: "easeIn" }}>
+                            <div className="outsidedrop n6">
+                                <div className="drop ">
+                                    <div className="skill">
+                                        <img src={react} alt="" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>React</h4></div>
+                                <div className="slidecontent"> <h4 className='text-center m-0 p-1'>React</h4></div>
 
-                        </div>
+                            </div>
+                        </motion.div>
 
 
 
@@ -103,36 +114,40 @@ const Skills = () => {
                     </div>
 
                     <div className="skillcontainer container">
-
-                        <div className="outsidedrop">
-                            <div className="drop ">
-                                <div className="skill">
-                                    <img src={node} alt="" />
+                        <motion.div initial={{x:-30, opacity: 0 }} animate={{x:0, opacity: 1 }}  transition={{ duration: .5, delay: 3.5, ease: "easeIn" }}>
+                            <div className="outsidedrop">
+                                <div className="drop ">
+                                    <div className="skill">
+                                        <img src={node} alt="" />
+                                    </div>
                                 </div>
+                                <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Node</h4></div>
+
                             </div>
-                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Node</h4></div>
+                        </motion.div>
 
-                        </div>
-
-
-                        <div className="outsidedrop">
-                            <div className="drop ">
-                                <div className="skill">
-                                    <img src={express} alt="" />
+                        <motion.div initial={{x:-30, opacity: 0 }} animate={{x:0, opacity: 1 }}  transition={{ duration: .5, delay: 4, ease: "easeIn" }}>
+                            <div className="outsidedrop">
+                                <div className="drop ">
+                                    <div className="skill">
+                                        <img src={express} alt="" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Express js</h4></div>
+                                <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Express js</h4></div>
 
-                        </div>
-                        <div className="outsidedrop">
-                            <div className="drop ">
-                                <div className="skill">
-                                    <img src={mongodb} alt="" />
+                            </div>
+                        </motion.div>
+                        <motion.div initial={{x:-30, opacity: 0 }} animate={{x:0, opacity: 1 }}  transition={{ duration: .5, delay: 4.5, ease: "easeIn" }}>
+                            <div className="outsidedrop">
+                                <div className="drop ">
+                                    <div className="skill">
+                                        <img src={mongodb} alt="" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Mongodb</h4></div>
+                                <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Mongodb</h4></div>
 
-                        </div>
+                            </div>
+                        </motion.div>
 
 
 
@@ -146,7 +161,7 @@ const Skills = () => {
 
                     <div className="skillcontainer container">
 
-
+           <motion.div initial={{x:-30, opacity: 0 }} animate={{x:0, opacity: 1 }}  transition={{ duration: .5, delay: 5, ease: "easeIn" }}>
                         <div className="outsidedrop">
                             <div className="drop ">
                                 <div className="skill">
@@ -156,6 +171,8 @@ const Skills = () => {
                             <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Git</h4></div>
 
                         </div>
+                         </motion.div>
+                            <motion.div initial={{x:-30, opacity: 0 }} animate={{x:0, opacity: 1 }}  transition={{ duration: .5, delay: 5.5, ease: "easeIn" }}>
                         <div className="outsidedrop">
                             <div className="drop ">
                                 <div className="skill">
@@ -165,16 +182,9 @@ const Skills = () => {
                             <div className="slidecontent"> <h4 className='text-center m-0 p-1'>GitHub</h4></div>
 
                         </div>
+                         </motion.div>
 
-                        <div className="outsidedrop">
-                            <div className="drop ">
-                                <div className="skill">
-                                    <img src={vercel} alt="" />
-                                </div>
-                            </div>
-                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Vercel</h4></div>
-
-                        </div>
+                           <motion.div initial={{x:-30, opacity: 0 }} animate={{x:0, opacity: 1 }}  transition={{ duration: .5, delay: 6, ease: "easeIn" }}>
                         <div className="outsidedrop">
                             <div className="drop ">
                                 <div className="skill">
@@ -184,6 +194,7 @@ const Skills = () => {
                             <div className="slidecontent"> <h4 className='text-center m-0 p-1'>VS Code</h4></div>
 
                         </div>
+                         </motion.div>
 
 
                     </div>

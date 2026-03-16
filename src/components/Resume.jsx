@@ -1,6 +1,7 @@
 import React from 'react'
 import './styles/resume.css'
-import { motion, scale } from "framer-motion";
+import { animate, motion, scale } from "framer-motion";
+
 
 const Resume = () => {
     return (
@@ -26,40 +27,44 @@ const Resume = () => {
 
                         </div>
                         <div className="three ">
-                            <div className="first">
-                                <div className="year mb-2">
-                                    Present
-                                </div>
-                                <div className="edu mb-3">
-                                    <p className='m-0'>MERN</p>
-                                    <p className='m-0 '> Trichy</p>
+                            <motion.div initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: .5, delay: .5, ease: "easeIn" }}>
+                                <div className="first">
+                                    <div className="year mb-2">
+                                        Present
+                                    </div>
+                                    <div className="edu mb-3">
+                                        <p className='m-0'>MERN</p>
+                                        <p className='m-0 '> Trichy</p>
 
-                                </div>
-                                <div className="name">
-                                    SDLC
-                                </div>
+                                    </div>
+                                    <div className="name">
+                                        SDLC
+                                    </div>
 
-                                <div className="certificate">
-                                    <a href="">CERTIFICATE </a>
+                                    <div className="certificate">
+                                        <a href="" download="">CERTIFICATE <i class="fa-solid fa-download"></i></a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="first">
-                                <div className="year mb-2">
-                                    2020-2021
-                                </div>
-                                <div className="edu mb-3">
-                                    <p className='m-0'>HSC</p>
-                                    <p className='m-0 '> Dindigul</p>
+                            </motion.div>
+                            <motion.div initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: .5, delay: .7, ease: "easeIn" }}>
+                                <div className="first">
+                                    <div className="year mb-2">
+                                        2020-2021
+                                    </div>
+                                    <div className="edu mb-3">
+                                        <p className='m-0'>HSC</p>
+                                        <p className='m-0 '> Dindigul</p>
 
-                                </div>
-                                <div className="name">
-                                    C.D Goverment Higher Secondary School
-                                </div>
+                                    </div>
+                                    <div className="name">
+                                        C.D Goverment Higher Secondary School
+                                    </div>
 
-                                <div className="certificate">
-                                    <a href="">CERTIFICATE </a>
+                                    <div className="certificate">
+                                         <a href="" download="">CERTIFICATE <i class="fa-solid fa-download"></i></a>
+                                    </div>
                                 </div>
-                            </div>
+                            </motion.div>
 
 
                         </div>
@@ -76,43 +81,46 @@ const Resume = () => {
 
 
                         <div className="three th">
-                            <div className="first">
-                                <div className="year mb-2">
-                                    2021-2025
-                                </div>
-                                <div className="edu mb-3">
-                                    <p className='m-0'>BE-EEE</p>
-                                    <p className='m-0 '> Karur</p>
+                            <motion.div initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: .5, delay: .5, ease: "easeIn" }}>
+                                <div className="first">
+                                    <div className="year mb-2">
+                                        2021-2025
+                                    </div>
+                                    <div className="edu mb-3">
+                                        <p className='m-0'>BE-EEE</p>
+                                        <p className='m-0 '> Karur</p>
 
-                                </div>
-                                <div className="name">
-                                    NSN College Of Engineering and Technology
-                                </div>
+                                    </div>
+                                    <div className="name">
+                                        NSN College Of Engineering and Technology
+                                    </div>
 
-                                <div className="certificate">
-                                    <a href="">CERTIFICATE </a>
+                                    <div className="certificate">
+                                        <a href="" download="">CERTIFICATE <i class="fa-solid fa-download"></i></a>
+                                    </div>
                                 </div>
-                            </div>
+                            </motion.div>
 
 
+                            <motion.div initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: .5, delay: .7, ease: "easeIn" }}>
+                                <div className="first">
+                                    <div className="year mb-2">
+                                        2019-2020
+                                    </div>
+                                    <div className="edu mb-3">
+                                        <p className='m-0'>SSLC</p>
+                                        <p className='m-0 '> Dindigul</p>
 
-                            <div className="first">
-                                <div className="year mb-2">
-                                    2019-2020
-                                </div>
-                                <div className="edu mb-3">
-                                    <p className='m-0'>SSLC</p>
-                                    <p className='m-0 '> Dindigul</p>
+                                    </div>
+                                    <div className="name">
+                                        C.D Goverment Higher Secondary School
+                                    </div>
 
+                                    <div className="certificate">
+                                          <a href="" download="">CERTIFICATE <i class="fa-solid fa-download"></i></a>
+                                    </div>
                                 </div>
-                                <div className="name">
-                                    C.D Goverment Higher Secondary School
-                                </div>
-
-                                <div className="certificate">
-                                    <a href="">CERTIFICATE </a>
-                                </div>
-                            </div>
+                            </motion.div>
 
                         </div>
                     </div>
@@ -120,9 +128,17 @@ const Resume = () => {
 
                 </div>
 
+               <div className="resume">
+                    <iframe src="../../public/cv.pdf" >
+
+                    </iframe>
+               </div>
+
 
 
             </div>
+
+           
         </motion.div>
     )
 }

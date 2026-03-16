@@ -49,31 +49,34 @@
     overflow: hidden;
 }
 
-.pagecontainer .tree .three .first:hover::before {
-    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.363));
-
-    transform: scale(1);
-    opacity: 0;
-}
-
-/* .pagecontainer .tree .three .first::before {
-    transition: .3s ease;
+.pagecontainer .tree .three .first::before {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 60%;
+    transform: skewX(-60deg);
     height: 100%;
-    border-radius: 20px;
     left: 0;
-    top: 0;
-    transform: scale(0);
-} */
+    top: -100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.155), rgba(255, 255, 255, 0.319), rgba(255, 255, 255, 0.111));
+    transition: 1s ease-in-out;
+}
+
+.pagecontainer .tree .three .first:hover::before {
+    top: 170%;
+    left: 80%;
+
+    width: 30%;
+}
+
+
+
 
 .pagecontainer .tree .line {
     border: 1px solid rgba(128, 128, 128, 0.347);
 }
 
 .pagecontainer .tree .three .year {
-    border: 1px solid gray;
+    border: 1px solid var(--gray-color);
     width: fit-content;
     padding: 2px 20px;
     border-radius: 5px;
@@ -88,7 +91,20 @@
 
 .pagecontainer .tree .three .edu p {
     color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 500;
 }
+
+.pagecontainer .tree .three .first .certificate{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: .8rem;
+    border: 1px solid var(--gray-color);
+    padding: 5px 10px;
+    border-radius: 30px
+}
+
 
 .pagecontainer .tree .three .district {
 
@@ -144,6 +160,13 @@
 .pagecontainer .tree .line .dot4 {
     left: -5px;
     top: 80%;
+}
+
+
+iframe{
+    margin-top: 30px;
+    width: 100%;
+    height: 100vh;
 }
 
 @media screen and (max-width:800px) {

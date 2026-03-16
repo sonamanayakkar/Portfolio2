@@ -19,7 +19,7 @@ const Header = ({ dark, color }) => {
 
   return (
 
-    <motion.div initial={{y:-400,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:2.5}} >
+    <motion.div initial={{x:-50,opacity:0}} animate={{x:0,opacity:1}} transition={{duration:.5,ease:"easeInOut"}} >
 
       <header className='d-flex flex-lg-column gap-3 p-lg-0'>
         <div className="nameandrole" >
