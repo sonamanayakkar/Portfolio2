@@ -31,7 +31,7 @@ const Contact = () => {
 
     }
 
-    
+
 
 
     return (
@@ -41,8 +41,11 @@ const Contact = () => {
             transition={{ duration: 0.5 }} style={{ position: "static", zIndex: -1 }}>
             <div className='pagecontainer container-fluid p-lg-5 p-4 pb-5  m-lg-0 mt-3'>
 
-                <div className="header">
-                    <div className="two first"><p className='m-0'>Contact </p></div>
+                <div className="header ">
+                    <div className="two first mb-2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        fill="currentColor" viewBox="0 0 24 24" >
+                        <path d="M19 2H5c-.55 0-1 .45-1 1v4H2v2h2v2H2v2h2v2H2v2h2v4c0 .55.45 1 1 1h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m0 18H6V4h13z"></path><path d="M12.5 7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 1 0 0-5m4.5 9c0-1.66-1.34-3-3-3h-3c-1.66 0-3 1.34-3 3v1h9z"></path>
+                    </svg><p className='ms-2 mb-0'>Contact </p></div>
                     <div className="two"><h2>Let's Get in Touch!</h2></div>
                 </div>
 
@@ -92,7 +95,7 @@ const Contact = () => {
                         </div>
                         <div className="col-md-6">
                             <label htmlFor="inputEmail4" className="form-label">Email</label><br />
-                            <input type="email" className="w-100 " required id="inputEmail4" style={{ height: "8vh" }} value={info.email}  onChange={(e) => setInfo({ ...info, email: e.target.value })} />
+                            <input type="email" className="w-100 " required id="inputEmail4" style={{ height: "8vh" }} value={info.email} onChange={(e) => setInfo({ ...info, email: e.target.value })} />
                         </div>
                         <div className="col-12">
                             <label htmlFor="inputEmail4" className="form-label">Your Message</label><br />

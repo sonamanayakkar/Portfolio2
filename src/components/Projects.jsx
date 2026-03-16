@@ -18,7 +18,10 @@ const Projects = () => {
 
                 <div className="proj">
                     <div className="header">
-                        <div className="two first mb-3"><p className='m-0'>Projects </p></div>
+                        <div className="two first mb-3"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" viewBox="0 0 24 24" >
+                            <path d="M20 6h-3V4c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2M9 4h6v2H9zM8 8h12v3.07l-.83.39a16.78 16.78 0 0 1-14.34 0L4 11.07V8zM4 20v-6.72c2.54 1.19 5.27 1.79 8 1.79s5.46-.6 8-1.79V20z"></path>
+                        </svg><p className='ms-2 mb-0'>Projects </p></div>
                         <div className="two mb-4"><h2>  Featured Projects</h2></div>
                     </div>
 
@@ -27,80 +30,99 @@ const Projects = () => {
                         <div className="pro pro1">
                             <div className="imageodd  outer">
                                 <div className="inner p-0">
-                                    <img src={cake} alt="" /></div>
-                            </div>
+                                    <img src={cake} alt="" />
+                                    <div className="contents ">
 
-                            <div className="contents p-3">
-                                <div className="two">
-                                    <h5>Cream Craft</h5>
-                                    <div className="usetools">
-                                        <div className="smallbox ">Html</div>
-                                        <div className="smallbox">Css</div>
-                                    </div>
+                                        <h5>Cream Craft</h5>
+                                      
+                                        <div className="usetools">
+                                            <span>Tech Stack</span>
+                                            <div className="smallbox ">Html</div>
+                                            <div className="smallbox">Css</div>
+                                        </div>
 
-                                </div>
 
-                                <div className="two">
-                                    <a href="https://sonamanayakkar.github.io/CreamCraft-Online-Cake-Ordering-System/home.html" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        fill="currentColor" viewBox="0 0 24 24" >
-                                        <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
-                                    </svg></div></a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div className="pro pro2">
-                            <div className="imageodd imageeven outer">
-                                <div className="inner p-0">
-                                    <img src={spicy} alt="" /></div>
-                            </div>
 
-                            <div className="contents p-3">
-                                <div className="two">
-                                    <h5>Spicy Hunt</h5>
-                                    <div className="usetools">
-                                        <div className="smallbox ">Html</div>
-                                        <div className="smallbox">Css</div>
-                                        <div className="smallbox">Bootstrap</div>
+                                        <a href="https://sonamanayakkar.github.io/CreamCraft-Online-Cake-Ordering-System/home.html" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" viewBox="0 0 24 24" >
+                                            <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
+                                        </svg></div></a>
+
                                     </div>
                                 </div>
 
-                                <div className="two">
-                                    <a href="https://spicyhunt-ebon.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        fill="currentColor" viewBox="0 0 24 24" >
-                                        <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
-                                    </svg></div></a>
-                                </div>
                             </div>
+
+
                         </div>
 
-                        <div className="pro pro3">
+                        <div className="pro pro1">
                             <div className="imageodd  outer">
                                 <div className="inner p-0">
-                                    <img src={guitar} alt="" /></div>
-                            </div>
+                                    <img src={spicy} alt="" />
+                                    <div className="contents ">
 
-                            <div className="contents p-3">
-                                <div className="two">
-                                    <h5>Rhythmix</h5>
-                                    <div className="usetools">
-                                        <div className="smallbox ">Html</div>
-                                        <div className="smallbox">Css</div>
-                                        <div className="smallbox">Bootstrap</div>
-                                        <div className="smallbox">Java Script</div>
+                                        <h5>SpicyHunt</h5>
+                                      
+                                        <div className="usetools">
+                                            <span>Tech Stack</span>
+                                            <div className="smallbox ">Html</div>
+                                            <div className="smallbox">Css</div>
+                                            <div className="smallbox">Bootstrap</div>
+                                        </div>
+
+
+
+
+                                        <a href="https://spicyhunt-41gcqb22q-esonaman2-6387s-projects.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" viewBox="0 0 24 24" >
+                                            <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
+                                        </svg></div></a>
+
                                     </div>
                                 </div>
 
-                                <div className="two">
-                                    <a href="https://online-music-instruments-store-with.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        fill="currentColor" viewBox="0 0 24 24" >
-                                        <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
-                                    </svg></div></a>
-                                </div>
                             </div>
+
+
+                        </div>
+
+                        <div className="pro pro1">
+                            <div className="imageodd  outer">
+                                <div className="inner p-0">
+                                    <img src={guitar} alt="" />
+                                    <div className="contents ">
+
+                                        <h5>Rhytmix</h5>
+                                      
+                                        <div className="usetools">
+                                            <span>Tech Stack</span>
+                                            <div className="smallbox ">Html</div>
+                                            <div className="smallbox">Css</div>
+                                            <div className="smallbox">Bootstrap</div>
+                                            <div className="smallbox">Java Script</div>
+                                        </div>
+
+
+
+
+                                        <a href="https://online-music-instruments-store-with.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" viewBox="0 0 24 24" >
+                                            <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
+                                        </svg></div></a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
                         </div>
 
                        
+
+
 
 
                     </div>
@@ -112,60 +134,72 @@ const Projects = () => {
                     </div>
 
                     <div className="projects">
+                        
 
-                        <div className="pro pro1">
+                      <div className="pro pro1">
                             <div className="imageodd  outer">
                                 <div className="inner p-0">
-                                    <img src={age} alt="" /></div>
-                            </div>
+                                    <img src={age} alt="" />
+                                    <div className="contents ">
 
-                            <div className="contents p-3">
-                                <div className="two">
-                                    <h5>Age Calculator</h5>
-                                    <div className="usetools">
-                                        <div className="smallbox ">Html</div>
-                                        <div className="smallbox">Css</div>
-                                        <div className="smallbox">Java Script</div>
+                                        <h5>Age Calculator</h5>
+                                      
+                                        <div className="usetools">
+                                            <span>Tech Stack</span>
+                                            <div className="smallbox ">Html</div>
+                                            <div className="smallbox">Css</div>
+                                            <div className="smallbox">Java Script</div>
+                                        </div>
+
+
+
+
+                                        <a href="https://agecalculator-cpcq5p43p-esonaman2-6387s-projects.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" viewBox="0 0 24 24" >
+                                            <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
+                                        </svg></div></a>
+
                                     </div>
-
                                 </div>
 
-                                <div className="two">
-                                    <a href="https://agecalculator-eight-kappa.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        fill="currentColor" viewBox="0 0 24 24" >
-                                        <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
-                                    </svg></div></a>
-                                </div>
                             </div>
-                        </div>
 
-                        <div className="pro pro4">
-                            <div className="imageodd imageeven outer">
+
+                        </div>
+                      <div className="pro pro1">
+                            <div className="imageodd  outer">
                                 <div className="inner p-0">
-                                    <img src={salary} alt="" /></div>
-                            </div>
+                                    <img src={salary} alt="" />
+                                    <div className="contents ">
 
-                            <div className="contents p-3">
-                                <div className="two">
-                                    <h5>Employee's Salary Management System</h5>
-                                    <div className="usetools">
-                                        <div className="smallbox ">Html</div>
-                                        <div className="smallbox">Css</div>
-                                        <div className="smallbox">Bootstrap</div>
-                                        <div className="smallbox">Jquery</div>
+                                        <h5>Employee's Salary Management System</h5>
+                                      
+                                        <div className="usetools">
+                                            <span>Tech Stack</span>
+                                            <div className="smallbox ">Html</div>
+                                            <div className="smallbox">Css</div>
+                                            <div className="smallbox">Java Script</div>
+                                        </div>
+
+
+
+
+                                        <a href="https://employee-database-management-panel.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" viewBox="0 0 24 24" >
+                                            <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
+                                        </svg></div></a>
+
                                     </div>
                                 </div>
 
-                                <div className="two">
-                                    <a href="https://employee-database-management-panel.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                        fill="currentColor" viewBox="0 0 24 24" >
-                                        <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
-                                    </svg></div></a>
-                                </div>
                             </div>
+
+
                         </div>
 
-                       
+                        
+
+
 
 
                     </div>

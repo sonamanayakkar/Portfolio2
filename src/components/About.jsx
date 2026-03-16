@@ -10,7 +10,7 @@ const About = () => {
   // let [name, setName] = useState({ name: "", condition: true })
 
   useEffect(() => {
-    if (completedproject <= 9) {
+    if (completedproject <= 4) {
       setTimeout(() => {
         setcompletedproject(completedproject + 1)
       }, 100);
@@ -54,17 +54,17 @@ const About = () => {
             <div className="row row-cols-lg-3 row-cols-1">
 
               <div className="col  d-flex align-items-center gap-3">
-                <h1 className='fw-normal' >{completedproject}</h1>
+                <h1 className='fw-normal' >{completedproject}  </h1>
                 <p className='completed'>Completed Projects</p>
               </div>
               <div className="col  d-flex align-items-center   gap-3">
                 <h1 className='fw-normal'>1</h1>
                 <p className='completed'>Years of Learning & Development</p>
               </div>
-              <div className="col  d-flex align-items-center   gap-3">
+              {/* <div className="col  d-flex align-items-center   gap-3">
                 <h1 className=' fw-normal'>{technicalproject}</h1>
                 <p className='completed'> Technical Projects & Innovations</p>
-              </div>
+              </div> */}
 
             </div>
           </div>

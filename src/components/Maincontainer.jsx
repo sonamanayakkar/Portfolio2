@@ -23,11 +23,11 @@ const Maincontainer = () => {
         setMode(!mode) //false = dark mode  , true = light mode
       
         if (mode) {
-            document.documentElement.style.setProperty("--bg-color", "linear-gradient(to right, #ffffff, rgb(255, 255, 255))")
+            document.documentElement.style.setProperty("--bg-color", "linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.69))")
             document.documentElement.style.setProperty("--bg-color2", "  linear-gradient(to right, #ffffff, rgb(255, 255, 255))")
             document.documentElement.style.setProperty("--white-color", "rgb(0, 0, 0)")
             document.documentElement.style.setProperty("--border-graycolor", " rgba(190, 190, 190, 0.477)")
-            document.documentElement.style.setProperty("--skil-bg", " #ebebeb")
+            document.documentElement.style.setProperty("--skil-bg", " #ffffff")
             document.documentElement.style.setProperty("--black-color", "rgb(230, 230, 230)")
         }
         else {

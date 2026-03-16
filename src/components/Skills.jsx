@@ -27,7 +27,10 @@ const Skills = () => {
 
                 <div className="pages mb-5">
                     <div className="header mb-4">
-                        <div className="two first"><p className='m-0'>Technical skills</p></div>
+                        <div className="two first"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            fill="currentColor" viewBox="0 0 24 24" >
+                            <path d="M22 8c0-.55-.45-1-1-1h-2V6c0-.55-.45-1-1-1h-3c-.55 0-1 .45-1 1v5h-4V6c0-.55-.45-1-1-1H6c-.55 0-1 .45-1 1v1H3c-.55 0-1 .45-1 1v3H1v2h1v3c0 .55.45 1 1 1h2v1c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-1h2c.55 0 1-.45 1-1v-3h1v-2h-1zM4 15V9h1v6zm4 2H7V7h1zm9 0h-1V7h1zm3-2h-1V9h1z"></path>
+                        </svg><p className='ms-2 mb-0'>Technical skills</p></div>
                         <div className="two mt-3"><h2>Frontend Development</h2></div>
                     </div>
 
@@ -39,7 +42,7 @@ const Skills = () => {
                                     <img src={html} alt="" />
                                 </div>
                             </div>
-                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Html</h4></div>
+                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>HTML</h4></div>
 
                         </div>
                         <div className="outsidedrop">
@@ -69,7 +72,7 @@ const Skills = () => {
                             <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Bootstrap</h4></div>
 
                         </div>
-                        
+
                         <div className="outsidedrop">
                             <div className="drop ">
                                 <div className="skill">
@@ -88,7 +91,7 @@ const Skills = () => {
                             <div className="slidecontent"> <h4 className='text-center m-0 p-1'>React</h4></div>
 
                         </div>
-                        
+
 
 
                     </div>
@@ -101,26 +104,6 @@ const Skills = () => {
 
                     <div className="skillcontainer container">
 
-                        
-                        <div className="outsidedrop">
-                            <div className="drop ">
-                                <div className="skill">
-                                    <img src={mongodb} alt="" />
-                                </div>
-                            </div>
-                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Mongodb</h4></div>
-
-                        </div>
-                        <div className="outsidedrop">
-                            <div className="drop ">
-                                <div className="skill">
-                                    <img src={express} alt="" />
-                                </div>
-                            </div>
-                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Express js</h4></div>
-
-                        </div>
-                       
                         <div className="outsidedrop">
                             <div className="drop ">
                                 <div className="skill">
@@ -132,6 +115,28 @@ const Skills = () => {
                         </div>
 
 
+                        <div className="outsidedrop">
+                            <div className="drop ">
+                                <div className="skill">
+                                    <img src={express} alt="" />
+                                </div>
+                            </div>
+                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Express js</h4></div>
+
+                        </div>
+                        <div className="outsidedrop">
+                            <div className="drop ">
+                                <div className="skill">
+                                    <img src={mongodb} alt="" />
+                                </div>
+                            </div>
+                            <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Mongodb</h4></div>
+
+                        </div>
+
+
+
+
                     </div>
                 </div>
                 <div className="pages">
@@ -141,7 +146,7 @@ const Skills = () => {
 
                     <div className="skillcontainer container">
 
-                        
+
                         <div className="outsidedrop">
                             <div className="drop ">
                                 <div className="skill">
@@ -160,7 +165,7 @@ const Skills = () => {
                             <div className="slidecontent"> <h4 className='text-center m-0 p-1'>GitHub</h4></div>
 
                         </div>
-                       
+
                         <div className="outsidedrop">
                             <div className="drop ">
                                 <div className="skill">

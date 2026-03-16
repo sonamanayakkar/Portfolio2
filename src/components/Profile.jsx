@@ -15,15 +15,15 @@ const Profile = () => {
 
                 <div className="informations">
                     
-                    <h5 className='text-center rolee'>Fullstack Developer</h5>
+                    <h5 className='text-center rolee'>MERN Developer</h5>
                     <h3 className='text-center  name'>SONAMANAYAKKAR</h3>
                     <div className="apps ">
-                        <a href="https://github.com/sonamanayakkar">  <div className="app"><i className="fa-brands fa-github"></i></div></a>
+                        <a href="https://github.com/sonamanayakkar" target='_blank'>  <div className="app"><i className="fa-brands fa-github"></i></div></a>
                         <a href="https://www.linkedin.com/in/sonamanayakkar-e-98bab0352/" target='_blank'><div className="app"><i className="fa-brands fa-linkedin-in"></i></div></a>
 
 
                         <a href="https://wa.me/917904087127" target='_blank'> <div className="app"><i className="fa-brands fa-whatsapp"></i></div></a>
-                        <a href="https://www.instagram.com/sonu__mom__little_king/?hl=en"> <div className="app"><i className="fa-brands fa-instagram"></i></div></a>
+                        <a href="https://www.instagram.com/sonu__mom__little_king/?hl=en" target='_blank'> <div className="app"><i className="fa-brands fa-instagram"></i></div></a>
 
                     </div>
                 </div>
