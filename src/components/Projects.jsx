@@ -27,24 +27,29 @@ const Projects = () => {
 
                     <div className="projects">
 
-                        <div className="pro pro1">
+                         <div className="pro pro1">
                             <div className="imageodd  outer">
                                 <div className="inner p-0">
-                                    <img src={cake} alt="" />
-                                    <div className="contents ">
+
+                                    <div className="front">
+                                        <img src={cake} alt="" />
+                                    </div>
+
+                                    <div className="back contents ">
 
                                         <h5>Cream Craft</h5>
-                                      
+
                                         <div className="usetools">
                                             <span>Tech Stack</span>
                                             <div className="smallbox ">Html</div>
                                             <div className="smallbox">Css</div>
+                                           
                                         </div>
 
 
 
 
-                                        <a href="https://sonamanayakkar.github.io/CreamCraft-Online-Cake-Ordering-System/home.html" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        <a href="https://spicyhunt-41gcqb22q-esonaman2-6387s-projects.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             fill="currentColor" viewBox="0 0 24 24" >
                                             <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
                                         </svg></div></a>
@@ -53,18 +58,19 @@ const Projects = () => {
                                 </div>
 
                             </div>
-
-
                         </div>
-
                         <div className="pro pro1">
                             <div className="imageodd  outer">
                                 <div className="inner p-0">
-                                    <img src={spicy} alt="" />
-                                    <div className="contents ">
+
+                                    <div className="front">
+                                        <img src={spicy} alt="" />
+                                    </div>
+
+                                    <div className="back contents ">
 
                                         <h5>SpicyHunt</h5>
-                                      
+
                                         <div className="usetools">
                                             <span>Tech Stack</span>
                                             <div className="smallbox ">Html</div>
@@ -84,18 +90,19 @@ const Projects = () => {
                                 </div>
 
                             </div>
-
-
                         </div>
-
                         <div className="pro pro1">
                             <div className="imageodd  outer">
                                 <div className="inner p-0">
-                                    <img src={guitar} alt="" />
-                                    <div className="contents ">
+
+                                    <div className="front">
+                                        <img src={guitar} alt="" />
+                                    </div>
+
+                                    <div className="back contents ">
 
                                         <h5>Rhytmix</h5>
-                                      
+
                                         <div className="usetools">
                                             <span>Tech Stack</span>
                                             <div className="smallbox ">Html</div>
@@ -107,7 +114,7 @@ const Projects = () => {
 
 
 
-                                        <a href="https://online-music-instruments-store-with.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        <a href="https://spicyhunt-41gcqb22q-esonaman2-6387s-projects.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             fill="currentColor" viewBox="0 0 24 24" >
                                             <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
                                         </svg></div></a>
@@ -116,11 +123,11 @@ const Projects = () => {
                                 </div>
 
                             </div>
-
-
                         </div>
 
-                       
+                        
+
+
 
 
 
@@ -134,16 +141,20 @@ const Projects = () => {
                     </div>
 
                     <div className="projects">
-                        
 
-                      <div className="pro pro1">
+
+                         <div className="pro pro1">
                             <div className="imageodd  outer">
                                 <div className="inner p-0">
-                                    <img src={age} alt="" />
-                                    <div className="contents ">
+
+                                    <div className="front">
+                                        <img src={age} alt="" />
+                                    </div>
+
+                                    <div className="back contents ">
 
                                         <h5>Age Calculator</h5>
-                                      
+
                                         <div className="usetools">
                                             <span>Tech Stack</span>
                                             <div className="smallbox ">Html</div>
@@ -154,7 +165,7 @@ const Projects = () => {
 
 
 
-                                        <a href="https://agecalculator-cpcq5p43p-esonaman2-6387s-projects.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        <a href="https://spicyhunt-41gcqb22q-esonaman2-6387s-projects.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             fill="currentColor" viewBox="0 0 24 24" >
                                             <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
                                         </svg></div></a>
@@ -163,28 +174,30 @@ const Projects = () => {
                                 </div>
 
                             </div>
-
-
                         </div>
-                      <div className="pro pro1">
+                         <div className="pro pro1">
                             <div className="imageodd  outer">
                                 <div className="inner p-0">
-                                    <img src={salary} alt="" />
-                                    <div className="contents ">
 
-                                        <h5>Employee's Salary Management System</h5>
-                                      
+                                    <div className="front">
+                                        <img src={salary} alt="" />
+                                    </div>
+
+                                    <div className="back contents ">
+
+                                        <h5>Employee Salary Management System</h5>
+
                                         <div className="usetools">
                                             <span>Tech Stack</span>
                                             <div className="smallbox ">Html</div>
                                             <div className="smallbox">Css</div>
-                                            <div className="smallbox">Java Script</div>
+                                            <div className="smallbox">JQUERY</div>
                                         </div>
 
 
 
 
-                                        <a href="https://employee-database-management-panel.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        <a href="https://spicyhunt-41gcqb22q-esonaman2-6387s-projects.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             fill="currentColor" viewBox="0 0 24 24" >
                                             <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
                                         </svg></div></a>
@@ -193,11 +206,10 @@ const Projects = () => {
                                 </div>
 
                             </div>
-
-
                         </div>
+                      
 
-                        
+
 
 
 

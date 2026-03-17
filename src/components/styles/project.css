@@ -7,49 +7,139 @@
 
 .pagecontainer .projects .pro {
     position: relative;
-    padding: 10px;
+    padding: 2px;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.115);
-     background: var(--bg-color);
+    overflow: hidden;
     height: fit-content;
     box-shadow: 0px 0px 10px 2px rgba(86, 86, 86, 0.16);
+    /* animation: glowp 2s ease infinite alternate-reverse; */
 
+}
+
+.pagecontainer .projects .pro::before {
+    width: 200%;
+    height: 200%;
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    z-index: 0;
+    background: conic-gradient( transparent, transparent, transparent,var(--green-color));
+    animation: rotate1 5s linear infinite;
+}
+
+.pagecontainer .projects .pro::after {
+    width: 200%;
+    height: 200%;
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    z-index: 0;
+
+    background: conic-gradient(var(--white-color), transparent, transparent, transparent);
+
+    animation: rotate2 5s linear infinite reverse;
+}
+
+@keyframes rotate1 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.pagecontainer .projects .pro .outer {
+    perspective: 1000px;
+    position: relative;
+    height: 35vh;
+    border-radius: 15px;
+    z-index: 2;
+    background:var(--bg-color2)
+
+}
+
+@keyframes glowp {
+    from {
+        box-shadow: 0px 0px 10px .5px var(--green-color);
+    }
 }
 
 
 .pagecontainer .projects .pro .inner {
     height: 100%;
+    border-radius: 15px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+
 }
-.pagecontainer .projects .pro:hover .contents .smallbox {
-    background-color: var(--green-color);
-    color: black;
-    
+
+
+.pagecontainer .projects .pro .outer:hover .inner {
+    transform: rotateY(180deg);
+}
+
+.pagecontainer .projects .pro .outer .front {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.pagecontainer .projects .pro .outer .back {
+    backface-visibility: hidden;
+    position: absolute;
+    background: var(--bg-color);
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    z-index: 1;
 }
 
 
 
+.pagecontainer .projects .pro .front {
+
+    height: 100%;
+    border-radius: 15px;
+
+}
 
 .pagecontainer .projects .pro .imageodd img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: .3s ease;
 }
-.pagecontainer .projects .pro:hover img{
-    z-index: 0;
-    transform: scale(1.2);
-}
-.pagecontainer .projects .pro .imageodd {
-    position: relative;
-    height: 45vh;
-    border-radius: 15px;
-    overflow: hidden;
-}
 
+
+/* 
 .pagecontainer .projects .pro .contents {
     transition: .2s ease;
     position: absolute;
@@ -71,7 +161,7 @@
 }
 .pagecontainer .projects .pro:hover .contents{
 transform: scale(1);
-}
+} */
 
 .pagecontainer .projects .pro .contents h5 {
     color: var(--white-color);
@@ -109,20 +199,27 @@ transform: scale(1);
     gap: 10px;
     width: 240px;
 }
-.pagecontainer .projects .pro .contents .usetools span{
+
+.pagecontainer .projects .pro .contents .usetools span {
     color: var(--green-color);
 }
 
 @media screen and (max-width:800px) {
     .pagecontainer .projects {
-    display: grid;
-    grid-template-columns: 1fr ;
-    gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
 
-}
+    }
+
     .pagecontainer .projects .pro {
-        position: static;
+      
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .pagecontainer .projects .pro .outer {
+        perspective: 1000px;
+        height: 25vh;
     }
 }
