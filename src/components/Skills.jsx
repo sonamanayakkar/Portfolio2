@@ -82,10 +82,10 @@ const Skills = () => {
                                 <div className="drop ">
                                     <div className="d">
                                         <div className="skill">
-                                        <img src={bootstrap} alt="" />
+                                            <img src={bootstrap} alt="" />
+                                        </div>
                                     </div>
-                                    </div>
-                                    
+
                                 </div>
                                 <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Bootstrap</h4></div>
 
@@ -96,10 +96,10 @@ const Skills = () => {
                                 <div className="drop ">
                                     <div className="d">
                                         <div className="skill">
-                                        <img src={jquery} alt="" />
+                                            <img src={jquery} alt="" />
+                                        </div>
                                     </div>
-                                    </div>
-                                    
+
                                 </div>
                                 <div className="slidecontent"> <h4 className='text-center m-0 p-1'>jQuery</h4></div>
 
@@ -110,10 +110,10 @@ const Skills = () => {
                                 <div className="drop ">
                                     <div className="d">
                                         <div className="skill">
-                                        <img src={react} alt="" />
+                                            <img src={react} alt="" />
+                                        </div>
                                     </div>
-                                    </div>
-                                    
+
                                 </div>
                                 <div className="slidecontent"> <h4 className='text-center m-0 p-1'>React</h4></div>
 
@@ -135,11 +135,11 @@ const Skills = () => {
                             <div className="outsidedrop">
                                 <div className="drop ">
                                     <div className="d">
-                                          <div className="skill">
-                                        <img src={node} alt="" />
+                                        <div className="skill">
+                                            <img src={node} alt="" />
+                                        </div>
                                     </div>
-                                    </div>
-                                  
+
                                 </div>
                                 <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Node</h4></div>
 
@@ -151,10 +151,10 @@ const Skills = () => {
                                 <div className="drop ">
                                     <div className="d">
                                         <div className="skill">
-                                        <img src={express} alt="" />
+                                            <img src={express} alt="" />
+                                        </div>
                                     </div>
-                                    </div>
-                                    
+
                                 </div>
                                 <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Express js</h4></div>
 
@@ -164,11 +164,11 @@ const Skills = () => {
                             <div className="outsidedrop">
                                 <div className="drop ">
                                     <div className="d">
-                                          <div className="skill">
-                                        <img src={mongodb} alt="" />
+                                        <div className="skill">
+                                            <img src={mongodb} alt="" />
+                                        </div>
                                     </div>
-                                    </div>
-                                  
+
                                 </div>
                                 <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Mongodb</h4></div>
 
@@ -192,10 +192,10 @@ const Skills = () => {
                                 <div className="drop ">
                                     <div className="d">
                                         <div className="skill">
-                                        <img src={git} alt="" />
+                                            <img src={git} alt="" />
+                                        </div>
                                     </div>
-                                    </div>
-                                    
+
                                 </div>
                                 <div className="slidecontent"> <h4 className='text-center m-0 p-1'>Git</h4></div>
 
@@ -205,11 +205,11 @@ const Skills = () => {
                             <div className="outsidedrop">
                                 <div className="drop ">
                                     <div className="d">
-                                           <div className="skill">
-                                        <img src={github} alt="" />
+                                        <div className="skill">
+                                            <img src={github} alt="" />
+                                        </div>
                                     </div>
-                                    </div>
-                                 
+
                                 </div>
                                 <div className="slidecontent"> <h4 className='text-center m-0 p-1'>GitHub</h4></div>
 
@@ -220,11 +220,11 @@ const Skills = () => {
                             <div className="outsidedrop">
                                 <div className="drop ">
                                     <div className="d">
-                                          <div className="skill">
-                                        <img src={vscode} alt="" />
+                                        <div className="skill">
+                                            <img src={vscode} alt="" />
+                                        </div>
                                     </div>
-                                    </div>
-                                  
+
                                 </div>
                                 <div className="slidecontent"> <h4 className='text-center m-0 p-1'>VS Code</h4></div>
 
