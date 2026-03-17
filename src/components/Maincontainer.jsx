@@ -28,7 +28,7 @@ const Maincontainer = () => {
             document.documentElement.style.setProperty("--bg-color2", "  linear-gradient(to right, #ffffff, rgb(255, 255, 255))")
             document.documentElement.style.setProperty("--white-color", "rgb(0, 0, 0)")
             document.documentElement.style.setProperty("--border-graycolor", " rgba(190, 190, 190, 0.477)")
-            document.documentElement.style.setProperty("--skil-bg", " #b5b5b5")
+            document.documentElement.style.setProperty("--skil-bg", " #d3d3d3")
             document.documentElement.style.setProperty("--black-color", "rgb(230, 230, 230)")
         }
         else {
@@ -68,7 +68,7 @@ const Maincontainer = () => {
 
         if (options == "yellow" && !mode) {
             console.log("yellow");
-            document.documentElement.style.setProperty("--green-color", "rgb(255, 208, 0)")
+            document.documentElement.style.setProperty("--green-color", "rgb(255, 217, 0)")
 
 
         }

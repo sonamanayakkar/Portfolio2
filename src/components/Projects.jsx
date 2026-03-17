@@ -49,7 +49,7 @@ const Projects = () => {
 
 
 
-                                        <a href="https://spicyhunt-41gcqb22q-esonaman2-6387s-projects.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        <a href="https://cream-craft-online-cake-ordering-sy.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             fill="currentColor" viewBox="0 0 24 24" >
                                             <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
                                         </svg></div></a>
@@ -114,7 +114,7 @@ const Projects = () => {
 
 
 
-                                        <a href="https://spicyhunt-41gcqb22q-esonaman2-6387s-projects.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        <a href="https://online-music-instruments-store-with-admin-management-6xy48j96b.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             fill="currentColor" viewBox="0 0 24 24" >
                                             <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
                                         </svg></div></a>
@@ -165,7 +165,7 @@ const Projects = () => {
 
 
 
-                                        <a href="https://spicyhunt-41gcqb22q-esonaman2-6387s-projects.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        <a href="https://agecalculator-eight-kappa.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             fill="currentColor" viewBox="0 0 24 24" >
                                             <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
                                         </svg></div></a>
@@ -197,7 +197,7 @@ const Projects = () => {
 
 
 
-                                        <a href="https://spicyhunt-41gcqb22q-esonaman2-6387s-projects.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        <a href="https://employee-database-management-panel-5l2wgcils.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             fill="currentColor" viewBox="0 0 24 24" >
                                             <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
                                         </svg></div></a>
