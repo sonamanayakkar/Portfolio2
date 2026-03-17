@@ -57,6 +57,10 @@ textarea {
 
 }
 
+.pagecontainer .contacts textarea{
+    padding: 20px;
+}
+
 
 .pagecontainer .contacts input:focus {
     border: none;
