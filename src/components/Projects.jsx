@@ -6,6 +6,7 @@ import spicy from './images/projects/spicyhunt.jpg'
 import guitar from './images/projects/guitar.jpg'
 import age from './images/projects/age.jpg'
 import salary from './images/projects/salary.jpg'
+import flight from './images/projects/flight.jpg'
 
 
 const Projects = () => {
@@ -115,6 +116,39 @@ const Projects = () => {
 
 
                                         <a href="https://online-music-instruments-store-with-admin-management-6xy48j96b.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" viewBox="0 0 24 24" >
+                                            <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
+                                        </svg></div></a>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="pro pro1">
+                            <div className="imageodd  outer">
+                                <div className="inner p-0">
+
+                                    <div className="front">
+                                        <img src={flight} alt="" />
+                                    </div>
+
+                                    <div className="back contents ">
+
+                                        <h5>Real-Time Flight Tracking System with Live Weather Integration</h5>
+
+                                        <div className="usetools">
+                                            <span>Tech Stack</span>
+                                            <div className="smallbox ">React.js</div>
+                                            <div className="smallbox">Css</div>
+                                            <div className="smallbox">Bootstrap</div>
+                                            <div className="smallbox">Java Script</div>
+                                        </div>
+
+
+
+
+                                        <a href="https://flight-tracker-ochre-rho.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             fill="currentColor" viewBox="0 0 24 24" >
                                             <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
                                         </svg></div></a>
