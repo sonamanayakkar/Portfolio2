@@ -7,6 +7,7 @@ import guitar from './images/projects/guitar.jpg'
 import age from './images/projects/age.jpg'
 import salary from './images/projects/salary.jpg'
 import flight from './images/projects/flight.jpg'
+import agree from './images/projects/agree.jpg'
 
 
 const Projects = () => {
@@ -28,29 +29,33 @@ const Projects = () => {
 
                     <div className="projects">
 
-                         <div className="pro pro1">
+                        <div className="pro pro1">
                             <div className="imageodd  outer">
                                 <div className="inner p-0">
 
                                     <div className="front">
-                                        <img src={cake} alt="" />
+                                        <img src={agree} alt="" />
                                     </div>
 
                                     <div className="back contents ">
 
-                                        <h5>Cream Craft</h5>
+                                        <h5>agri Smart</h5>
 
                                         <div className="usetools">
                                             <span>Tech Stack</span>
-                                            <div className="smallbox ">Html</div>
+                                            <div className="smallbox ">React.js</div>
+                                            <div className="smallbox">HTML</div>
                                             <div className="smallbox">Css</div>
-                                           
+                                            <div className="smallbox">Bootstrap</div>
+                                            <div className="smallbox">express.js</div>
+                                            <div className="smallbox">Node.js</div>
+                                            <div className="smallbox">MongoDB</div>
                                         </div>
 
 
 
 
-                                        <a href="https://cream-craft-online-cake-ordering-sy.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        <a href="https://smart-farming-and-market-management.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             fill="currentColor" viewBox="0 0 24 24" >
                                             <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
                                         </svg></div></a>
@@ -65,24 +70,26 @@ const Projects = () => {
                                 <div className="inner p-0">
 
                                     <div className="front">
-                                        <img src={spicy} alt="" />
+                                        <img src={flight} alt="" />
                                     </div>
 
                                     <div className="back contents ">
 
-                                        <h5>SpicyHunt</h5>
+                                        <h5>Real-Time Flight Tracking System with Live Weather Integration</h5>
 
                                         <div className="usetools">
                                             <span>Tech Stack</span>
-                                            <div className="smallbox ">Html</div>
+                                            <div className="smallbox ">React.js</div>
+                                            <div className="smallbox">HTML</div>
                                             <div className="smallbox">Css</div>
                                             <div className="smallbox">Bootstrap</div>
+                                            <div className="smallbox">Java Script</div>
                                         </div>
 
 
 
 
-                                        <a href="https://spicyhunt-41gcqb22q-esonaman2-6387s-projects.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        <a href="https://flight-tracker-ochre-rho.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             fill="currentColor" viewBox="0 0 24 24" >
                                             <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
                                         </svg></div></a>
@@ -130,25 +137,24 @@ const Projects = () => {
                                 <div className="inner p-0">
 
                                     <div className="front">
-                                        <img src={flight} alt="" />
+                                        <img src={spicy} alt="" />
                                     </div>
 
                                     <div className="back contents ">
 
-                                        <h5>Real-Time Flight Tracking System with Live Weather Integration</h5>
+                                        <h5>SpicyHunt</h5>
 
                                         <div className="usetools">
                                             <span>Tech Stack</span>
-                                            <div className="smallbox ">React.js</div>
+                                            <div className="smallbox ">Html</div>
                                             <div className="smallbox">Css</div>
                                             <div className="smallbox">Bootstrap</div>
-                                            <div className="smallbox">Java Script</div>
                                         </div>
 
 
 
 
-                                        <a href="https://flight-tracker-ochre-rho.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        <a href="https://spicyhunt-41gcqb22q-esonaman2-6387s-projects.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                             fill="currentColor" viewBox="0 0 24 24" >
                                             <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
                                         </svg></div></a>
@@ -159,12 +165,38 @@ const Projects = () => {
                             </div>
                         </div>
 
-                        
+                        <div className="pro pro1">
+                            <div className="imageodd  outer">
+                                <div className="inner p-0">
+
+                                    <div className="front">
+                                        <img src={cake} alt="" />
+                                    </div>
+
+                                    <div className="back contents ">
+
+                                        <h5>Cream Craft</h5>
+
+                                        <div className="usetools">
+                                            <span>Tech Stack</span>
+                                            <div className="smallbox ">Html</div>
+                                            <div className="smallbox">Css</div>
+
+                                        </div>
 
 
 
 
+                                        <a href="https://cream-craft-online-cake-ordering-sy.vercel.app/" target='_blank' className='m-0'><div className="arrow m-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            fill="currentColor" viewBox="0 0 24 24" >
+                                            <path d="M17 16V7H8v2h5.59l-6.3 6.29 1.42 1.42 6.29-6.3V16z"></path>
+                                        </svg></div></a>
 
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -177,7 +209,7 @@ const Projects = () => {
                     <div className="projects">
 
 
-                         <div className="pro pro1">
+                        <div className="pro pro1">
                             <div className="imageodd  outer">
                                 <div className="inner p-0">
 
@@ -209,7 +241,7 @@ const Projects = () => {
 
                             </div>
                         </div>
-                         <div className="pro pro1">
+                        <div className="pro pro1">
                             <div className="imageodd  outer">
                                 <div className="inner p-0">
 
@@ -241,7 +273,7 @@ const Projects = () => {
 
                             </div>
                         </div>
-                      
+
 
 
 

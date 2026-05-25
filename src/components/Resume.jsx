@@ -1,6 +1,9 @@
 import React from 'react'
 import './styles/resume.css'
 import { animate, motion, scale } from "framer-motion";
+import sslc from '../components/images/certificates/10th marksheet.jpeg'
+import provisional from '../components/images/certificates/provisional certificate.jpeg'
+import hsc from '../components/images/certificates/12th marksheet.jpeg'
 
 
 const Resume = () => {
@@ -61,7 +64,7 @@ const Resume = () => {
                                     </div>
 
                                     <div className="certificate">
-                                         <a href="" download="">CERTIFICATE <i class="fa-solid fa-download"></i></a>
+                                         <a href={hsc} download="12th marksheet">CERTIFICATE <i class="fa-solid fa-download"></i></a>
                                     </div>
                                 </div>
                             </motion.div>
@@ -96,7 +99,7 @@ const Resume = () => {
                                     </div>
 
                                     <div className="certificate">
-                                        <a href="" download="">CERTIFICATE <i class="fa-solid fa-download"></i></a>
+                                        <a href={provisional} download="provisional certificate">CERTIFICATE <i class="fa-solid fa-download"></i></a>
                                     </div>
                                 </div>
                             </motion.div>
@@ -105,7 +108,7 @@ const Resume = () => {
                             <motion.div initial={{ x: -50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: .5, delay: .7, ease: "easeIn" }}>
                                 <div className="first">
                                     <div className="year mb-2">
-                                        2019-2020
+                                        2018-2019
                                     </div>
                                     <div className="edu mb-3">
                                         <p className='m-0'>SSLC</p>
@@ -117,7 +120,7 @@ const Resume = () => {
                                     </div>
 
                                     <div className="certificate">
-                                          <a href="" download="">CERTIFICATE <i class="fa-solid fa-download"></i></a>
+                                          <a href={sslc}download="10th marksheet">CERTIFICATE <i class="fa-solid fa-download"></i></a>
                                     </div>
                                 </div>
                             </motion.div>
@@ -129,7 +132,7 @@ const Resume = () => {
                 </div>
 
                <div className="resume">
-                    <iframe src="/cv.pdf" >
+                    <iframe src="/resume.pdf" >
 
                     </iframe>
                </div>

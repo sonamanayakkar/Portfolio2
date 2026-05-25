@@ -33,7 +33,7 @@ const Profile = () => {
                 </div>
                 <div className="container two two2 p-0">
                     <div className="c-2 fi text-center p-3" >
-                        <a href="../../public/cv.pdf" download="Sonamanayakkar.pdf">
+                        <a href="../../public/resume.pdf" download="Sonamanayakkar.pdf">
                             <h6 className='cvdownload ' style={{ cursor: "pointer" }} >Download CV<i className="fa-solid fa-download ms-2"></i></h6>
                         </a>
                     </div>
