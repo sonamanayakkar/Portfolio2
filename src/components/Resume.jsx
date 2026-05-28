@@ -4,7 +4,7 @@ import { animate, motion, scale } from "framer-motion";
 import sslc from '../components/images/certificates/10th marksheet.jpeg'
 import provisional from '../components/images/certificates/provisional certificate.jpeg'
 import hsc from '../components/images/certificates/12th marksheet.jpeg'
-
+import mern from '../components/images/certificates/mern.jpeg'
 
 const Resume = () => {
     return (
@@ -45,7 +45,7 @@ const Resume = () => {
                                     </div>
 
                                     <div className="certificate">
-                                        <a href="" download="">CERTIFICATE <i class="fa-solid fa-download"></i></a>
+                                        <a href={mern} download="Sonamanayakkar-MERN">CERTIFICATE <i class="fa-solid fa-download"></i></a>
                                     </div>
                                 </div>
                             </motion.div>
@@ -64,7 +64,7 @@ const Resume = () => {
                                     </div>
 
                                     <div className="certificate">
-                                         <a href={hsc} download="12th marksheet">CERTIFICATE <i class="fa-solid fa-download"></i></a>
+                                        <a href={hsc} download="12th marksheet">CERTIFICATE <i class="fa-solid fa-download"></i></a>
                                     </div>
                                 </div>
                             </motion.div>
@@ -120,7 +120,7 @@ const Resume = () => {
                                     </div>
 
                                     <div className="certificate">
-                                          <a href={sslc}download="10th marksheet">CERTIFICATE <i class="fa-solid fa-download"></i></a>
+                                        <a href={sslc} download="10th marksheet">CERTIFICATE <i class="fa-solid fa-download"></i></a>
                                     </div>
                                 </div>
                             </motion.div>
@@ -131,17 +131,17 @@ const Resume = () => {
 
                 </div>
 
-               <div className="resume">
+                <div className="resume">
                     <iframe src="/resume.pdf" >
 
                     </iframe>
-               </div>
+                </div>
 
 
 
             </div>
 
-           
+
         </motion.div>
     )
 }
